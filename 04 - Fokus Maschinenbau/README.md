@@ -7,3 +7,4 @@ Die Praktikanten erhalten eine Einführung in die Verwendung eines CAD-Tools und
 
 Das Projekteteam hat ein Übungsmodul zur CAD-Einführung und kann bei der Erstellung einer eigenen Konstruktion unterstützen.
 
+Thema: CAD, Konstruktion

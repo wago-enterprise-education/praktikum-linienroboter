@@ -5,6 +5,8 @@
 
 Ziel: Programmierung eines Webservers zur "Fernsteuerung" des Roboters
 
+Thema: Programmierung webbasierter Anwendungen, Embedded Programmierung 
+
 Arbeitsschritte:
 - "Hello World": Webserver ohne tiefere Funktion, kurzer Text als Response zum Client 
 - über Buttons auf Webseite Motoren und LEDs ein- und ausschalten
