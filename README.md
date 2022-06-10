@@ -1,37 +1,34 @@
-# Course Title
-
-```
-Note: 
-    Version is updated every time a new PDF handout is created!
-    Version appears in the presentation handout!
-    Generated handout is named according to course title!
-    Course PDF is optional.
-    Version is major.minor
-```
+# Praktikum "Linien Roboter"
 
 Version: V1.0
-Duration: 1 Week
+Duration: 1-3 Week(s)
 
 ## Content
 
-Basic course on Embedded Linux, covering:
+Start mit Basis-Praktikum
+- Kennenlernen ESP-Programmierung
+- Kennenlernen Ansteuern der Motoren und Anbinden der Sensoren
+- Aufbau des Roboters
+- Linie Folgen
 
-01 - Device Tree
-02 - PTXDist
-03 - ...
+Dann verschiedene Schwerpunkte möglich, je nach Interesse und Praktikums-Dauer.
+Bei langen Praktika können auch alle Schwerpunkte nacheinander durchgeführt werden.
 
-## Platform specific Subdirectories
+Elektrotechnik-Schwerpunkt:
+- Licht Folgen
+- Hindernis Erkennen
+- Hindernis Überholen
 
-- DE10 SoC
-- Raspi
+Informatik-Schwerpunkt:
+- "Hello World" Webserver
+- Motoren bzw. LEDs ein-/ausschalten
+- Fernsteuerung des Autos
+- falls ET-Schwerpunkt durchgeführt: 
+    - Integration der Sensor-Anbindung
+    - Umschaltbarkeit zwischen Fahr-Modi
+- Verschiedene "Zusatzaufgaben" s. Readme dort
 
-## Changelog (Optional)
-
-List all entries in reverse order, newest on top.
-
-2020-01-07 - M. Rehburg:
-- Added xyz
-- Typo in uvw
-
-2020-01-06 - A. Gerding
-- ...
+Maschinenbau-Schwerpunkt:
+- Zusammenarbeit mit Projekte-Team (evtl. auch Metall-Ausbilder, falls Projekte-Team keine Kapazitäten)
+- CAD-Einführung
+- 3D-Scan des Autos und Konstruktion einer Karosserie 
