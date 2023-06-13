@@ -27,6 +27,8 @@
 -	Platine
 -	2x 470R
 -	2x 180R (aus Aufgabe 2)
+-	1x 390R
+-	2x 10k
 -	Kondensator 220nF
 -	Kondensator 1µF
 -	Kabelbinder
