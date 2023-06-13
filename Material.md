@@ -31,9 +31,9 @@
 -	1x 390R
 -	2x 470R
 -	2x 10k
--	Kondensator 1x 100nF
--	Kondensator 1x 330nF
--	Kondensator 1x 1µF
+-	Kondensator 1x Tantal 100nF
+-	Kondensator 1x Tantal 330nF
+-	Kondensator 1x Elko 1µF
 -	Kabelbinder
 -	3x Diode 1N4007 (2 aus Aufgabe 2)
 -	Ggfs. 2x LEDs gelb
