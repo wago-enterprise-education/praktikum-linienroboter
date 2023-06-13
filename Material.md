@@ -25,12 +25,15 @@
 ## Teil 3: Aufbauanleitung
 -	Lötzubehör
 -	Platine
--	2x 470R
 -	2x 180R (aus Aufgabe 2)
+-	1x 200R
+-	2x 220R (aus Aufgabe 1)
 -	1x 390R
+-	2x 470R
 -	2x 10k
--	Kondensator 220nF
--	Kondensator 1µF
+-	Kondensator 1x 100nF
+-	Kondensator 1x 330nF
+-	Kondensator 1x 1µF
 -	Kabelbinder
 -	3x Diode 1N4007 (2 aus Aufgabe 2)
 -	Ggfs. 2x LEDs gelb
