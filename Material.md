@@ -22,7 +22,7 @@
 -	2x Transistor BD135
 -	2x Diode 1N4007
 -	2x 180R
-## Teil 3: Ausbauanleitung
+## Teil 3: Aufbauanleitung
 -	Lötzubehör
 -	Platine
 -	2x 470R
