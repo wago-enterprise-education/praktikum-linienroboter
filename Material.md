@@ -46,4 +46,6 @@
 -	Steck-Jumper
 -	Stiftleiste 2-polig
 -	Kühlkörper
+-	Kabelbinder
+-	doppelseitiges Klebeband
 
