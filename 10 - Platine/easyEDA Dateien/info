@@ -1,0 +1,769 @@
+{
+  "uuid": "cafb9879abee49543aa64c010b25676f",
+  "path": "Offline/20220111_161900",
+  "name": "20220111_161900",
+  "content": "",
+  "created_at": "2022-01-11 15:42:51",
+  "updated_at": "2022-01-11 16:19:00",
+  "stick": "",
+  "documents": [
+    {
+      "uuid": "232f1ecbdf49b64fd10e18f7a76dbe8f",
+      "title": "Sheet_1",
+      "description": "",
+      "docType": "1",
+      "master": "",
+      "thumb": "/images/thumb-default.png",
+      "components": {
+        "63c4a14ef701408fa8aeaccaa0b48ee4": 1,
+        "5c08921bd6fc47ca839cf23ea4bdb1d6": 2,
+        "6004427743dbdd555d6b794af143fe13": 3,
+        "f2714202d23a41c4909cef26b4f18ed1": 8,
+        "3e5f9305e4ff42e585f4a630aaa490d5": 1,
+        "e2caf61f24344e81a980f2035b76a903": 1,
+        "5ea300d09cc640319a67b9b0b50ddb7c": 2,
+        "c710e426340948ccbe39cea5e5eac96d": 1,
+        "88cdfeabfd6d4abea197387d61f416b9": 2,
+        "8850ffcdb9d242a1b431d4a3e2209db1": 2,
+        "dbfa7da092bc44faa13a86aaa683160b": 2,
+        "decd6f6d3af642e7af4bce30b1197f3b": 1,
+        "d1967012734640e5b2f2cc1ea764740b": 10,
+        "acb83044b2b446608c539eb6657a23b3": 1
+      },
+      "BOM": [
+        [
+          "Value",
+          "Quantity",
+          "Package",
+          "Components",
+          "CustomPara"
+        ],
+        [
+          "330n",
+          1,
+          "RAD-0.1",
+          "C1",
+          {
+            "BOM_Supplier Part": "",
+            "BOM_Supplier": "",
+            "BOM_Manufacturer Part": "",
+            "puuid": "ea82fbe34d7840de9fdcf3145ab199ef",
+            "uuid": "dbfa7da092bc44faa13a86aaa683160b"
+          }
+        ],
+        [
+          "100n",
+          1,
+          "RAD-0.1",
+          "C2",
+          {
+            "BOM_Supplier Part": "",
+            "BOM_Supplier": "",
+            "BOM_Manufacturer Part": "",
+            "puuid": "ea82fbe34d7840de9fdcf3145ab199ef",
+            "uuid": "dbfa7da092bc44faa13a86aaa683160b"
+          }
+        ],
+        [
+          "1u",
+          1,
+          "CAP-D6.3×F2.5",
+          "C3",
+          {
+            "BOM_Supplier Part": "",
+            "BOM_Supplier": "",
+            "BOM_Manufacturer Part": "",
+            "puuid": "f22f57806f1b484c9525ae585bd9e142",
+            "uuid": "decd6f6d3af642e7af4bce30b1197f3b"
+          }
+        ],
+        [
+          "1N4007",
+          3,
+          "DO-35_BD2.0-L4.0-P8.00-D0.5-FD",
+          "D1,D2,D3",
+          {
+            "BOM_Supplier": "LCSC",
+            "BOM_Manufacturer Part": "1N4148",
+            "BOM_Manufacturer": "SEMTECH",
+            "BOM_Supplier Part": "C14516",
+            "BOM_JLCPCB Part Class": "Extended Part",
+            "puuid": "07f65a035ec440c9ba8d8743498f47ca",
+            "uuid": "6004427743dbdd555d6b794af143fe13"
+          }
+        ],
+        [
+          "JUMPER",
+          1,
+          "JUMPER 5",
+          "JP1",
+          {
+            "BOM_Manufacturer Part": "",
+            "puuid": "a2d613b4e31d46969158b1bc0f7613ac",
+            "uuid": "acb83044b2b446608c539eb6657a23b3"
+          }
+        ],
+        [
+          "Blinker links",
+          1,
+          "LED-TH_BD5.0_RED",
+          "LED1",
+          {
+            "BOM_Manufacturer": "EVERLIGHT(台湾亿光)",
+            "BOM_Manufacturer Part": "333-2SURD/S530-A3",
+            "BOM_Supplier Part": "C87271",
+            "BOM_Supplier": "LCSC",
+            "puuid": "ce0ed154d45b41508e0debca8473ba07",
+            "uuid": "8850ffcdb9d242a1b431d4a3e2209db1"
+          }
+        ],
+        [
+          "Blinker rechts",
+          1,
+          "LED-TH_BD5.0_RED",
+          "LED2",
+          {
+            "BOM_Manufacturer": "EVERLIGHT(台湾亿光)",
+            "BOM_Manufacturer Part": "333-2SURD/S530-A3",
+            "BOM_Supplier Part": "C87271",
+            "BOM_Supplier": "LCSC",
+            "puuid": "ce0ed154d45b41508e0debca8473ba07",
+            "uuid": "8850ffcdb9d242a1b431d4a3e2209db1"
+          }
+        ],
+        [
+          "BD135",
+          2,
+          "SOT-32_L7.6-W2.7-P2.15-L",
+          "Q1,Q2",
+          {
+            "BOM_Supplier": "LCSC",
+            "BOM_Supplier Part": "C283398",
+            "BOM_Manufacturer": "STMicroelectronics",
+            "BOM_Manufacturer Part": "BD135",
+            "BOM_JLCPCB Part Class": "Extended Part",
+            "puuid": "ac47dfd39d22439c8557d420b4cca76a",
+            "uuid": "5c08921bd6fc47ca839cf23ea4bdb1d6"
+          }
+        ],
+        [
+          "200",
+          1,
+          "R_AXIAL-0.4",
+          "R1",
+          {
+            "BOM_Supplier Part": "",
+            "BOM_Supplier": "",
+            "BOM_Manufacturer Part": "",
+            "puuid": "5905db98cde4487fbb177070aa85bbe1",
+            "uuid": "d1967012734640e5b2f2cc1ea764740b"
+          }
+        ],
+        [
+          "390",
+          1,
+          "R_AXIAL-0.4",
+          "R2",
+          {
+            "BOM_Supplier Part": "",
+            "BOM_Supplier": "",
+            "BOM_Manufacturer Part": "",
+            "puuid": "5905db98cde4487fbb177070aa85bbe1",
+            "uuid": "d1967012734640e5b2f2cc1ea764740b"
+          }
+        ],
+        [
+          "10k",
+          2,
+          "R_AXIAL-0.4",
+          "R3,R4",
+          {
+            "BOM_Supplier Part": "",
+            "BOM_Supplier": "",
+            "BOM_Manufacturer Part": "",
+            "puuid": "5905db98cde4487fbb177070aa85bbe1",
+            "uuid": "d1967012734640e5b2f2cc1ea764740b"
+          }
+        ],
+        [
+          "220",
+          2,
+          "R_AXIAL-0.4",
+          "R5,R6",
+          {
+            "BOM_Supplier Part": "",
+            "BOM_Supplier": "",
+            "BOM_Manufacturer Part": "",
+            "puuid": "5905db98cde4487fbb177070aa85bbe1",
+            "uuid": "d1967012734640e5b2f2cc1ea764740b"
+          }
+        ],
+        [
+          "180",
+          2,
+          "R_AXIAL-0.4",
+          "R7,R8",
+          {
+            "BOM_Supplier Part": "",
+            "BOM_Supplier": "",
+            "BOM_Manufacturer Part": "",
+            "puuid": "5905db98cde4487fbb177070aa85bbe1",
+            "uuid": "d1967012734640e5b2f2cc1ea764740b"
+          }
+        ],
+        [
+          "470",
+          2,
+          "R_AXIAL-0.4",
+          "R9,R11",
+          {
+            "BOM_Supplier Part": "",
+            "BOM_Supplier": "",
+            "BOM_Manufacturer Part": "",
+            "puuid": "5905db98cde4487fbb177070aa85bbe1",
+            "uuid": "d1967012734640e5b2f2cc1ea764740b"
+          }
+        ],
+        [
+          "PHOTORES",
+          2,
+          "PDV-P9XXX",
+          "R10,R12",
+          {
+            "BOM_Manufacturer Part": "",
+            "puuid": "99959802cb0742ccac25d0c38171a0c6",
+            "uuid": "5ea300d09cc640319a67b9b0b50ddb7c"
+          }
+        ],
+        [
+          "SWITCH-SPDTPTH",
+          1,
+          "SWITCH-SPDT",
+          "S1",
+          {
+            "BOM_Manufacturer Part": "",
+            "puuid": "582b2812f92d48e28e764ee23b4c002a",
+            "uuid": "c710e426340948ccbe39cea5e5eac96d"
+          }
+        ],
+        [
+          "V+",
+          1,
+          "SOLDERPAD-PACKAGE",
+          "T1",
+          {
+            "BOM_Supplier Part": "",
+            "BOM_Supplier": "",
+            "BOM_Manufacturer Part": "",
+            "puuid": "8d0f74dab4e84806bd91217ed6f8dc49",
+            "uuid": "f2714202d23a41c4909cef26b4f18ed1"
+          }
+        ],
+        [
+          "GND",
+          1,
+          "SOLDERPAD-PACKAGE",
+          "T2",
+          {
+            "BOM_Supplier Part": "",
+            "BOM_Supplier": "",
+            "BOM_Manufacturer Part": "",
+            "puuid": "8d0f74dab4e84806bd91217ed6f8dc49",
+            "uuid": "f2714202d23a41c4909cef26b4f18ed1"
+          }
+        ],
+        [
+          "+",
+          3,
+          "SOLDERPAD-PACKAGE",
+          "T3,T5,T7",
+          {
+            "BOM_Supplier Part": "",
+            "BOM_Supplier": "",
+            "BOM_Manufacturer Part": "",
+            "puuid": "8d0f74dab4e84806bd91217ed6f8dc49",
+            "uuid": "f2714202d23a41c4909cef26b4f18ed1"
+          }
+        ],
+        [
+          "-",
+          3,
+          "SOLDERPAD-PACKAGE",
+          "T4,T6,T8",
+          {
+            "BOM_Supplier Part": "",
+            "BOM_Supplier": "",
+            "BOM_Manufacturer Part": "",
+            "puuid": "8d0f74dab4e84806bd91217ed6f8dc49",
+            "uuid": "f2714202d23a41c4909cef26b4f18ed1"
+          }
+        ],
+        [
+          "HC-SR04",
+          1,
+          "HC-SR04",
+          "U1",
+          {
+            "BOM_Manufacturer Part": "HC-SR04",
+            "puuid": "b0fad6b828aa4c12bae8f2ed6c0ee1fb",
+            "uuid": "63c4a14ef701408fa8aeaccaa0b48ee4"
+          }
+        ],
+        [
+          "ESP32 DEVKIT V1 DOIT",
+          1,
+          "DOIT-ESP32-DEVKIT-V1",
+          "U2",
+          {
+            "BOM_Manufacturer Part": "",
+            "puuid": "4fb9dd84a4c6437882b24a374301f0d2",
+            "uuid": "e2caf61f24344e81a980f2035b76a903"
+          }
+        ],
+        [
+          "L7805",
+          1,
+          "TO-220-3_L10.0-W4.5-P2.54-L",
+          "U3",
+          {
+            "BOM_Supplier": "LCSC",
+            "BOM_Manufacturer": "STMicroelectronics",
+            "BOM_Manufacturer Part": "L7805CV-DG",
+            "BOM_Supplier Part": "C3795",
+            "puuid": "948e610cffd14df79f04c73832b1409b",
+            "uuid": "3e5f9305e4ff42e585f4a630aaa490d5"
+          }
+        ],
+        [
+          "Liniensensor links",
+          1,
+          "LINIENSENSOR",
+          "U4",
+          {
+            "BOM_Manufacturer": "",
+            "BOM_Manufacturer Part": "",
+            "BOM_Supplier Part": "",
+            "BOM_Supplier": "",
+            "puuid": "b782b4d700884e3ca3129f8e145ca629",
+            "uuid": "88cdfeabfd6d4abea197387d61f416b9"
+          }
+        ],
+        [
+          "Liniensensor rechts",
+          1,
+          "LINIENSENSOR",
+          "U5",
+          {
+            "BOM_Manufacturer": "",
+            "BOM_Manufacturer Part": "",
+            "BOM_Supplier Part": "",
+            "BOM_Supplier": "",
+            "puuid": "b782b4d700884e3ca3129f8e145ca629",
+            "uuid": "88cdfeabfd6d4abea197387d61f416b9"
+          }
+        ]
+      ],
+      "updateTime": 1639142982,
+      "createTime": 1636029877,
+      "histories": [],
+      "created_at": "2021-11-04 13:44:37",
+      "updated_at": "2021-12-10 14:29:42"
+    },
+    {
+      "uuid": "a83c465844c54fac594ec7011592d87b",
+      "title": "PCB_LinienRoboter",
+      "filename": "PCB_LinienRoboter.json",
+      "description": "",
+      "docType": "3",
+      "master": "",
+      "thumb": "/images/thumb-default.png",
+      "components": {
+        "07f65a035ec440c9ba8d8743498f47ca": 3,
+        "5905db98cde4487fbb177070aa85bbe1": 10,
+        "b782b4d700884e3ca3129f8e145ca629": 2,
+        "b0fad6b828aa4c12bae8f2ed6c0ee1fb": 1,
+        "f22f57806f1b484c9525ae585bd9e142": 1,
+        "ea82fbe34d7840de9fdcf3145ab199ef": 2,
+        "4fb9dd84a4c6437882b24a374301f0d2": 1,
+        "948e610cffd14df79f04c73832b1409b": 1,
+        "a2d613b4e31d46969158b1bc0f7613ac": 1,
+        "8d0f74dab4e84806bd91217ed6f8dc49": 8,
+        "ac47dfd39d22439c8557d420b4cca76a": 2,
+        "99959802cb0742ccac25d0c38171a0c6": 2,
+        "582b2812f92d48e28e764ee23b4c002a": 1,
+        "ce0ed154d45b41508e0debca8473ba07": 2
+      },
+      "BOM": [
+        [
+          "Value",
+          "Quantity",
+          "Package",
+          "Components",
+          "CustomPara"
+        ],
+        [
+          "100n",
+          2,
+          "RAD-0.1",
+          "C1,C2",
+          {
+            "BOM_Supplier Part": "",
+            "BOM_Supplier": "",
+            "BOM_Manufacturer Part": "",
+            "puuid": "ea82fbe34d7840de9fdcf3145ab199ef",
+            "uuid": "dbfa7da092bc44faa13a86aaa683160b"
+          }
+        ],
+        [
+          "100u",
+          1,
+          "CAP-D6.3×F2.5",
+          "C3",
+          {
+            "BOM_Supplier Part": "",
+            "BOM_Supplier": "",
+            "BOM_Manufacturer Part": "",
+            "puuid": "f22f57806f1b484c9525ae585bd9e142",
+            "uuid": "decd6f6d3af642e7af4bce30b1197f3b"
+          }
+        ],
+        [
+          "1N4148",
+          3,
+          "DO-35_BD2.0-L4.0-P8.00-D0.5-FD",
+          "D1,D2,D3",
+          {
+            "BOM_Supplier": "LCSC",
+            "BOM_Manufacturer Part": "1N4148",
+            "BOM_Manufacturer": "SEMTECH",
+            "BOM_Supplier Part": "C14516",
+            "BOM_JLCPCB Part Class": "Extended Part",
+            "puuid": "07f65a035ec440c9ba8d8743498f47ca",
+            "uuid": "6004427743dbdd555d6b794af143fe13"
+          }
+        ],
+        [
+          "Blinker links",
+          1,
+          "LED-TH_BD5.0_RED",
+          "LED1",
+          {
+            "BOM_Manufacturer": "EVERLIGHT(台湾亿光)",
+            "BOM_Manufacturer Part": "333-2SURD/S530-A3",
+            "BOM_Supplier Part": "C87271",
+            "BOM_Supplier": "LCSC",
+            "puuid": "ce0ed154d45b41508e0debca8473ba07",
+            "uuid": "8850ffcdb9d242a1b431d4a3e2209db1"
+          }
+        ],
+        [
+          "Blinker rechts",
+          1,
+          "LED-TH_BD5.0_RED",
+          "LED2",
+          {
+            "BOM_Manufacturer": "EVERLIGHT(台湾亿光)",
+            "BOM_Manufacturer Part": "333-2SURD/S530-A3",
+            "BOM_Supplier Part": "C87271",
+            "BOM_Supplier": "LCSC",
+            "puuid": "ce0ed154d45b41508e0debca8473ba07",
+            "uuid": "8850ffcdb9d242a1b431d4a3e2209db1"
+          }
+        ],
+        [
+          "BD135",
+          2,
+          "SOT-32_L7.6-W2.7-P2.15-L",
+          "Q1,Q2",
+          {
+            "BOM_Supplier": "LCSC",
+            "BOM_Supplier Part": "C283398",
+            "BOM_Manufacturer": "STMicroelectronics",
+            "BOM_Manufacturer Part": "BD135",
+            "BOM_JLCPCB Part Class": "Extended Part",
+            "puuid": "ac47dfd39d22439c8557d420b4cca76a",
+            "uuid": "5c08921bd6fc47ca839cf23ea4bdb1d6"
+          }
+        ],
+        [
+          "200",
+          1,
+          "R_AXIAL-0.4",
+          "R1",
+          {
+            "BOM_Supplier Part": "",
+            "BOM_Supplier": "",
+            "BOM_Manufacturer Part": "",
+            "puuid": "5905db98cde4487fbb177070aa85bbe1",
+            "uuid": "d1967012734640e5b2f2cc1ea764740b"
+          }
+        ],
+        [
+          "390",
+          1,
+          "R_AXIAL-0.4",
+          "R2",
+          {
+            "BOM_Supplier Part": "",
+            "BOM_Supplier": "",
+            "BOM_Manufacturer Part": "",
+            "puuid": "5905db98cde4487fbb177070aa85bbe1",
+            "uuid": "d1967012734640e5b2f2cc1ea764740b"
+          }
+        ],
+        [
+          "10k",
+          2,
+          "R_AXIAL-0.4",
+          "R3,R4",
+          {
+            "BOM_Supplier Part": "",
+            "BOM_Supplier": "",
+            "BOM_Manufacturer Part": "",
+            "puuid": "5905db98cde4487fbb177070aa85bbe1",
+            "uuid": "d1967012734640e5b2f2cc1ea764740b"
+          }
+        ],
+        [
+          "220",
+          2,
+          "R_AXIAL-0.4",
+          "R5,R6",
+          {
+            "BOM_Supplier Part": "",
+            "BOM_Supplier": "",
+            "BOM_Manufacturer Part": "",
+            "puuid": "5905db98cde4487fbb177070aa85bbe1",
+            "uuid": "d1967012734640e5b2f2cc1ea764740b"
+          }
+        ],
+        [
+          "330",
+          2,
+          "R_AXIAL-0.4",
+          "R7,R8",
+          {
+            "BOM_Supplier Part": "",
+            "BOM_Supplier": "",
+            "BOM_Manufacturer Part": "",
+            "puuid": "5905db98cde4487fbb177070aa85bbe1",
+            "uuid": "d1967012734640e5b2f2cc1ea764740b"
+          }
+        ],
+        [
+          "1k",
+          2,
+          "R_AXIAL-0.4",
+          "R9,R11",
+          {
+            "BOM_Supplier Part": "",
+            "BOM_Supplier": "",
+            "BOM_Manufacturer Part": "",
+            "puuid": "5905db98cde4487fbb177070aa85bbe1",
+            "uuid": "d1967012734640e5b2f2cc1ea764740b"
+          }
+        ],
+        [
+          "PHOTORES",
+          2,
+          "PDV-P9XXX",
+          "R10,R12",
+          {
+            "BOM_Manufacturer Part": "",
+            "puuid": "99959802cb0742ccac25d0c38171a0c6",
+            "uuid": "5ea300d09cc640319a67b9b0b50ddb7c"
+          }
+        ],
+        [
+          "SWITCH-SPDTPTH",
+          1,
+          "SWITCH-SPDT",
+          "S1",
+          {
+            "BOM_Manufacturer Part": "",
+            "puuid": "582b2812f92d48e28e764ee23b4c002a",
+            "uuid": "c710e426340948ccbe39cea5e5eac96d"
+          }
+        ],
+        [
+          "V+",
+          1,
+          "SOLDERPAD-PACKAGE",
+          "T1",
+          {
+            "BOM_Supplier Part": "",
+            "BOM_Supplier": "",
+            "BOM_Manufacturer Part": "",
+            "puuid": "8d0f74dab4e84806bd91217ed6f8dc49",
+            "uuid": "f2714202d23a41c4909cef26b4f18ed1"
+          }
+        ],
+        [
+          "GND",
+          1,
+          "SOLDERPAD-PACKAGE",
+          "T2",
+          {
+            "BOM_Supplier Part": "",
+            "BOM_Supplier": "",
+            "BOM_Manufacturer Part": "",
+            "puuid": "8d0f74dab4e84806bd91217ed6f8dc49",
+            "uuid": "f2714202d23a41c4909cef26b4f18ed1"
+          }
+        ],
+        [
+          "Motor_re +",
+          1,
+          "SOLDERPAD-PACKAGE",
+          "T3",
+          {
+            "BOM_Supplier Part": "",
+            "BOM_Supplier": "",
+            "BOM_Manufacturer Part": "",
+            "puuid": "8d0f74dab4e84806bd91217ed6f8dc49",
+            "uuid": "f2714202d23a41c4909cef26b4f18ed1"
+          }
+        ],
+        [
+          "Motor_re -",
+          1,
+          "SOLDERPAD-PACKAGE",
+          "T4",
+          {
+            "BOM_Supplier Part": "",
+            "BOM_Supplier": "",
+            "BOM_Manufacturer Part": "",
+            "puuid": "8d0f74dab4e84806bd91217ed6f8dc49",
+            "uuid": "f2714202d23a41c4909cef26b4f18ed1"
+          }
+        ],
+        [
+          "Motor_li +",
+          1,
+          "SOLDERPAD-PACKAGE",
+          "T5",
+          {
+            "BOM_Supplier Part": "",
+            "BOM_Supplier": "",
+            "BOM_Manufacturer Part": "",
+            "puuid": "8d0f74dab4e84806bd91217ed6f8dc49",
+            "uuid": "f2714202d23a41c4909cef26b4f18ed1"
+          }
+        ],
+        [
+          "Motor_li -",
+          1,
+          "SOLDERPAD-PACKAGE",
+          "T6",
+          {
+            "BOM_Supplier Part": "",
+            "BOM_Supplier": "",
+            "BOM_Manufacturer Part": "",
+            "puuid": "8d0f74dab4e84806bd91217ed6f8dc49",
+            "uuid": "f2714202d23a41c4909cef26b4f18ed1"
+          }
+        ],
+        [
+          "Beeper +",
+          1,
+          "SOLDERPAD-PACKAGE",
+          "T7",
+          {
+            "BOM_Supplier Part": "",
+            "BOM_Supplier": "",
+            "BOM_Manufacturer Part": "",
+            "puuid": "8d0f74dab4e84806bd91217ed6f8dc49",
+            "uuid": "f2714202d23a41c4909cef26b4f18ed1"
+          }
+        ],
+        [
+          "Beeper -",
+          1,
+          "SOLDERPAD-PACKAGE",
+          "T8",
+          {
+            "BOM_Supplier Part": "",
+            "BOM_Supplier": "",
+            "BOM_Manufacturer Part": "",
+            "puuid": "8d0f74dab4e84806bd91217ed6f8dc49",
+            "uuid": "f2714202d23a41c4909cef26b4f18ed1"
+          }
+        ],
+        [
+          "HC-SR04",
+          1,
+          "HC-SR04",
+          "U1",
+          {
+            "BOM_Manufacturer Part": "HC-SR04",
+            "puuid": "b0fad6b828aa4c12bae8f2ed6c0ee1fb",
+            "uuid": "63c4a14ef701408fa8aeaccaa0b48ee4"
+          }
+        ],
+        [
+          "ESP32 DEVKIT V1 DOIT",
+          1,
+          "DOIT-ESP32-DEVKIT-V1",
+          "U2",
+          {
+            "BOM_Manufacturer Part": "",
+            "puuid": "4fb9dd84a4c6437882b24a374301f0d2",
+            "uuid": "e2caf61f24344e81a980f2035b76a903"
+          }
+        ],
+        [
+          "L7805",
+          1,
+          "TO-220-3_L10.0-W4.5-P2.54-L",
+          "U3",
+          {
+            "BOM_Supplier": "LCSC",
+            "BOM_Manufacturer": "STMicroelectronics",
+            "BOM_Manufacturer Part": "L7805CV-DG",
+            "BOM_Supplier Part": "C3795",
+            "puuid": "948e610cffd14df79f04c73832b1409b",
+            "uuid": "3e5f9305e4ff42e585f4a630aaa490d5"
+          }
+        ],
+        [
+          "Liniensensor links",
+          1,
+          "LINIENSENSOR",
+          "U4",
+          {
+            "BOM_Manufacturer": "",
+            "BOM_Manufacturer Part": "",
+            "BOM_Supplier Part": "",
+            "BOM_Supplier": "",
+            "puuid": "b782b4d700884e3ca3129f8e145ca629",
+            "uuid": "88cdfeabfd6d4abea197387d61f416b9"
+          }
+        ],
+        [
+          "Liniensensor rechts",
+          1,
+          "LINIENSENSOR",
+          "U5",
+          {
+            "BOM_Manufacturer": "",
+            "BOM_Manufacturer Part": "",
+            "BOM_Supplier Part": "",
+            "BOM_Supplier": "",
+            "puuid": "b782b4d700884e3ca3129f8e145ca629",
+            "uuid": "88cdfeabfd6d4abea197387d61f416b9"
+          }
+        ]
+      ],
+      "updateTime": 1641914340,
+      "createTime": 1636029895,
+      "histories": [],
+      "created_at": "2021-11-04 13:44:55",
+      "updated_at": "2022-01-11 16:19:00"
+    }
+  ],
+  "sort": [],
+  "title": "20220111_161900",
+  "foldername": "20220111_161900",
+  "schfilename": "LinienRoboter_V2-1 copy.json",
+  "schfilemtime": 1641912171539.8247
+}
