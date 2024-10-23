@@ -1,7 +1,7 @@
-name: vier-gewinnt site
+name: Linienroboter
 title: null
-author: Max Steidle, Lucas Krietenstein, Andreas Epp
-email: Andreas.Epp@WAGO.com
+author: Finn Erik Hilgers, Christian Dück
+email: finnerik.hilgers@WAGO.com
 remote_theme: andrebell/wago-howto-theme
 lang: de
 plugins:
