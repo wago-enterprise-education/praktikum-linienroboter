@@ -1,0 +1,10 @@
+name: Linienroboter
+title: null
+author: Finn Erik Hilgers, Christian Dück
+email: finnerik.hilgers@WAGO.com
+remote_theme: andrebell/wago-howto-theme
+lang: de
+plugins:
+- jemoji
+- jekyll-redirect-from
+- jekyll-relative-links
