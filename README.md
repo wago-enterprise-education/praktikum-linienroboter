@@ -1,34 +1,36 @@
 # Praktikum "Linien Roboter"
 
 Version: V1.0
-Duration: 1-3 Week(s)
+Dauer: ~2 Wochen
+Bachelor Projekt von Lisa Lueder
+Anpassungen durch Christian Dück und Finn Erik Hilgers
 
 ## Content
 
-Start mit Basis-Praktikum
-- Kennenlernen ESP-Programmierung
-- Kennenlernen Ansteuern der Motoren und Anbinden der Sensoren
-- Aufbau des Roboters
-- Linie Folgen
+Das Repository beinhaltet das Praktikum "Linienroboter", das für Praktikanten jeden Wissensstandes für ca. 2 Wochen ausgelegt ist.
 
-Dann verschiedene Schwerpunkte möglich, je nach Interesse und Praktikums-Dauer.
-Bei langen Praktika können auch alle Schwerpunkte nacheinander durchgeführt werden.
+Die Ordnerstruktur wurde geändert, um die Ressourcen und die Praktikumsaufgaben logisch zu sortieren und das Praktikum übersichtlicher zu unterteilen.
+Durch die neue Aufteilung ist es besser möglich, das Praktikum auch für eventuell unterschiedliche Zeiträume aufzuteilen.
 
-Elektrotechnik-Schwerpunkt:
-- Licht Folgen
-- Hindernis Erkennen
-- Hindernis Überholen
+Einführung
+- Kennenlernen des ESPs
+- Erste Programmierübungen
+- Arbeit mit den Sensoren
+- Pinout und CheatSheet für den ESP und die Arduino IDE
 
-Informatik-Schwerpunkt:
-- "Hello World" Webserver
-- Motoren bzw. LEDs ein-/ausschalten
-- Fernsteuerung des Autos
-- falls ET-Schwerpunkt durchgeführt: 
-    - Integration der Sensor-Anbindung
-    - Umschaltbarkeit zwischen Fahr-Modi
-- Verschiedene "Zusatzaufgaben" s. Readme dort
+Löten
+- Lötanleitung
+- Aufgaben zum Löten des Linienroboters
 
-Maschinenbau-Schwerpunkt:
-- Zusammenarbeit mit Projekte-Team (evtl. auch Metall-Ausbilder, falls Projekte-Team keine Kapazitäten)
-- CAD-Einführung
-- 3D-Scan des Autos und Konstruktion einer Karosserie 
+Programmieraufgaben
+- Linienverfolgung
+- Lichtverfolgung
+- Hindernisserkennung
+- Überholmanöver
+- Webanwendung (Anleitung und allgemeine Idee wurde nie beendet, müsste ausgearbeitet werden)
+
+Ressourcen - Dateien für die Entwicklung bzw. weiterführende Aufgabenentwicklung
+- 3D-Dateien für Felgen und Karosserie
+- Platinenpläne
+- Grundlegende Praktikums-Ideen
+- Materialliste
