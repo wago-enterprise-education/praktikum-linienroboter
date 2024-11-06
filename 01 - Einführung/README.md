@@ -11,16 +11,13 @@ Bekanntmachen mit:
         
 Programmiereinführung anhand der elektrischen Bauteile, die auch später auf dem Roboter benutzt werden, also Beispiele an der LED, Potentiometer (Als Alternative zu den Photowiderständen) etc.
 
-Enthalten sind:
-- digitalWrite, digitalRead
-- pinMode
-- define
-- delay
-- Boolean -> erklärung von High und Low
-- Variablen
-- If-Bedingung
-- analogWrite, analogRead
-- map
-
-02 -> Motor und Sensoransteuerung
-
+    Enthalten sind:
+    - digitalWrite, digitalRead -> Hinweis zu Liniensensoren
+    - pinMode
+    - define
+    - delay
+    - Boolean -> erklärung von High und Low
+    - Variablen
+    - If-Bedingung
+    - analogWrite, analogRead -> Hinweis zu Motoren
+    - map
