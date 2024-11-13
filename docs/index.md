@@ -1,9 +1,9 @@
- ---
- layout: page
- title: Linienroboter
- lang: de
- lang-ref: index
- ---
+---
+layout: page
+title: Linienroboter
+lang: de
+lang-ref: index
+---
 
 ## Kurzer Überblick
 
