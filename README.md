@@ -1,9 +1,9 @@
 # Praktikum "Linien Roboter"
 
-Version: V1.0 
-Dauer: ~2 Wochen 
-Bachelor Projekt von Lisa Lueder 
-Anpassungen durch Christian Dück und Finn Erik Hilgers 
+Version: V1.0  
+Dauer: ~2 Wochen  
+Bachelor Projekt von Lisa Lueder  
+Anpassungen durch Christian Dück und Finn Erik Hilgers  
 
 ## Content
 
