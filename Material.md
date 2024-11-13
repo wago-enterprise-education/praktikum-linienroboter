@@ -33,6 +33,7 @@
 -	Abstandsbolzen
 -	2x Buchsenleiste 1x15
 -	Schiebeschalter
+-   Photowiderstände
 -	Ultraschall-Abstandssensor HC-SR04
 -	Spannungsregler L7805
 -	Steck-Jumper
@@ -45,3 +46,4 @@
 -   Kabelbinder
 -   Schrumpfschlauch
 -   Ggfs. 3D-Halbkugel zum Gleiten
+-   Reifen
