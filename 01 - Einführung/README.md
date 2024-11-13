@@ -1,5 +1,11 @@
-Planung des Einführungsordners
-Autoren: Christian Dück, Finn Erik Hilgers
+# Praktikum "Linien Roboter" - Einführung
+
+Version: V1.1  
+Dauer: ~2 Wochen  
+Bachelor Projekt von Lisa Lueder  
+Anpassungen durch Christian Dück und Finn Erik Hilgers  
+
+## Content
 
 Bekanntmachen mit:
 - Arduino IDE

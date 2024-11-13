@@ -1,5 +1,13 @@
-Planung des Programmierordners
-Autoren: Christian Dück, Finn Erik Hilgers
+# Praktikum "Linien Roboter"
+
+Version: V1.1  
+Dauer: ~2 Wochen  
+Bachelor Projekt von Lisa Lueder  
+Anpassungen durch Christian Dück und Finn Erik Hilgers  
+
+## Content
+
+Verschiedene Programmieraufgaben für den Linienroboter.
 
 04-Linie Folgen
     Standardprogramm zur Verfolgung einer Linie auf dem Tisch
