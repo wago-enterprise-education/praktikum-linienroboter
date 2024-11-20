@@ -12,6 +12,7 @@ class Webserver{
     bool followLine;
     bool followLight;
     bool obstacleSensor;
+    bool blackLine;
 
     // PAD
     bool padLeft;
@@ -83,13 +84,16 @@ class Webserver{
         ESPUI.updateControl(ultrasonic);
       });
 
-      uint16_t select1 = ESPUI.addControl( ControlType::Select, "Linie Folge", "sw", ControlColor::Turquoise, tab1, [this] (Control *sender, int type) mutable {
-        Serial.println("Button1 pressed");
-        Serial.println(type);
+      uint16_t select1 = ESPUI.addControl(ControlType::Select, "Linie folgen:", "", ControlColor::Turquoise, tab1, [this] (Control *sender, int type) mutable {
+        if(sender -> value == "lineHIGH") {
+          blackLine = true;
+        } else {
+          blackLine = false;
+        }
       });
 
-      ESPUI.addControl( ControlType::Option, "Schwarze Linie auf Weiß", "sw", ControlColor::Turquoise, select1);
-      ESPUI.addControl( ControlType::Option, "Weiße Linie auf Schwarz", "ws", ControlColor::Turquoise, select1);
+      ESPUI.addControl(ControlType::Option, "Schwarze Linie auf Weiß", "lineHIGH", ControlColor::Turquoise, select1);
+      ESPUI.addControl(ControlType::Option, "Weiße Linie auf Schwarz", "lineLOW", ControlColor::Turquoise, select1);
 
       ESPUI.addControl(ControlType::Pad, "Bewegung", "", ControlColor::Dark, tab2, [this] (Control *sender, int type) mutable {
         switch (type) {
@@ -163,6 +167,14 @@ class Webserver{
 
     bool getObstacleButton() {
       return obstacleSensor;
+    }
+
+    bool isBlackLine() {
+      return blackLine;
+    }
+
+    bool isWhiteLine() {
+      return !blackLine;
     }
 };
 
