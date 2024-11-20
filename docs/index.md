@@ -11,7 +11,7 @@ Hallo und willkommen bei Ihrem Praktikum bei WAGO. In diesem Modul geht es darum
 
 ## Einführung
 
-In der Einführung sollen Sie sich zurerst mit der Arduino IDE bekanntmachen und sich Elektrotechnische und Informationstechnische Grundlagen aneignen, damit Sie später ohne Probleme mit dem Linienroboter umgehen können. Zuerst sollten Sie dafür in der [Materialliste](Material.pdf) sichergehen, dass Sie alle nötigen Bauteile dafür haben. Die Teile für die Einleitung sind nicht in dem Bauteilsatz enthalten. Bei der Bewältigung der Einführung könnte Ihnen [dieses Diagramm von den Pins des ESP32](00-Pinout-ESP32-DEVKIT-V1.pdf) und [dieser Arduino Cheat Sheet](00-CheatSheet-Arduino.pdf) helfen.
+In der [Einführung](01-ESP-Einführung.pdf) sollen Sie sich zurerst mit der Arduino IDE bekanntmachen und sich Elektrotechnische und Informationstechnische Grundlagen aneignen, damit Sie später ohne Probleme mit dem Linienroboter umgehen können. Zuerst sollten Sie dafür in der [Materialliste](Material.pdf) sichergehen, dass Sie alle nötigen Bauteile dafür haben. Die Teile für die Einleitung sind nicht in dem Bauteilsatz enthalten. Bei der Bewältigung der Einführung könnte Ihnen [dieses Diagramm von den Pins des ESP32](00-Pinout-ESP32-DEVKIT-V1.pdf) und [dieser Arduino Cheat Sheet](00-CheatSheet-Arduino.pdf) helfen.
 
 ## Aufbauanleitung
 
