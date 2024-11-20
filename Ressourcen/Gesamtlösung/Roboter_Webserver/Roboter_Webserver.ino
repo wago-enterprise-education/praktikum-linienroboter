@@ -1,12 +1,14 @@
 #include "Webserver.cpp"
 
+Webserver server;
+
 void setup() {
   // put your setup code here, to run once:
- Webserver test();
-
+  Serial.begin(9600);
+  
+  server.start("ESP32", "");
 }
 
 void loop() {
-  // put your main code here, to run repeatedly:
-  
+  server.getPadBack();
 }
