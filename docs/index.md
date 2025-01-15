@@ -11,11 +11,11 @@ Hallo und Willkommen zu Ihrem Praktikum bei WAGO. In diesem Modul geht es darum,
 
 ## Einführung
 
-In der [Einführung](01-ESP-Einführung.pdf) sollen Sie sich zurerst mit der Arduino IDE bekanntmachen und sich Elektrotechnische und Informationstechnische Grundlagen aneignen, damit Sie später ohne Probleme mit dem Linienroboter umgehen können. Zuerst sollten Sie dafür in der [Materialliste](Material.pdf) sichergehen, dass Sie alle nötigen Bauteile dafür haben. Die Teile für die Einleitung sind nicht in dem Bauteilsatz enthalten. Bei der Bewältigung der Einführung könnte Ihnen [dieses Diagramm von den Pins des ESP32](00-Pinout-ESP32-DEVKIT-V1.pdf) und [dieser Arduino Cheat Sheet](00-CheatSheet-Arduino.pdf) helfen.
+In der [Einführung](01-ESP-Einführung.pdf) sollen Sie sich zurerst mit der Arduino IDE bekanntmachen und sich elektro- und informationstechnische Grundlagen aneignen, damit Sie später ohne Probleme mit dem Linienroboter umgehen können. Zuerst sollten Sie dafür in der [Materialliste](Material.pdf) sichergehen, dass Sie alle nötigen Bauteile dafür haben. Die Teile für die Einleitung sind nicht in dem Bauteilsatz enthalten. Bei der Bewältigung der Einführung könnte Ihnen [dieses Diagramm von den Pins des ESP32](00-Pinout-ESP32-DEVKIT-V1.pdf) und [dieser Arduino Cheat Sheet](00-CheatSheet-Arduino.pdf) helfen.
 
 ## Aufbauanleitung
 
-Wenn Sie sichergestellt haben dass der Bauteilsatz vollständig ist, können Sie mit dem Aufbau starten. Um den Roboter aufbauen zu können, werden alle Bauteile in dem WAGO-Karton benötigt. Bevor Sie mit dem Löten anfangen Sagen Sie das einem Betreuer. Folgen Sie dann der [Lötanleitung](02-Lötanleitung.pdf) und anschließed der [Aufbauanleitung](03-Aufbau.pdf).
+Wenn Sie sichergestellt haben dass der Bauteilsatz vollständig ist, können Sie mit dem Aufbau starten. Um den Roboter aufbauen zu können, werden alle Bauteile in dem WAGO-Karton benötigt. Bevor Sie mit dem Löten anfangen, geben Sie einem Betreuer bescheid. Folgen Sie dann der [Lötanleitung](02-Lötanleitung.pdf) und anschließed der [Aufbauanleitung](03-Aufbau.pdf).
 
 ## Programmieraufgaben für den Roboter
 
