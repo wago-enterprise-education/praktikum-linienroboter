@@ -7,7 +7,7 @@ lang-ref: index
 
 ## Kurzer Überblick
 
-Hallo und willkommen bei Ihrem Praktikum bei WAGO. In diesem Modul geht es darum, einen Linienroboter aufzubauen, zu löten und zu programmieren. Zuerst sollten Sie sicherstellen, dass alle Bauteile in dem Bauteilsatz vollständig sind. Eine Liste aller Bauteile und welche Bauteile Sie für welche Aufgaben benötigen finden Sie [hier](Material.pdf). Bei Problemen oder Rückfragen können Sie sich gerne an [Herrn Rehburg oder Herr Lauxtermann wenden](#ansprechpartner).
+Hallo und Willkommen zu Ihrem Praktikum bei WAGO. In diesem Modul geht es darum, einen Linienroboter aufzubauen, zu löten und zu programmieren. Zuerst sollten Sie sicherstellen, dass alle Bauteile in dem Bauteilsatz vollständig sind. Eine Liste aller Bauteile und welche Bauteile Sie für welche Aufgaben benötigen finden Sie [hier](Material.pdf). Bei Problemen oder Rückfragen können Sie sich gerne an [Herrn Rehburg oder Herrn Lauxtermann wenden](#ansprechpartner).
 
 ## Einführung
 
@@ -23,19 +23,19 @@ Nach einem Erfolgreichem Aufbau gibt es verschiedene Aufgaben zum bearbeiten. Di
 
 ### Linie Folgen
 
-In dieser Aufgabe sollen Sie Ihren Roboter dazu bringen einer Linie zu folgen. Das ist die Elementarste aller Aufgaben. Das Aufgabenblatt dazu finden Sie [hier](04-Linie-Folgen.pdf). 
+In dieser Aufgabe sollen Sie Ihren Roboter dazu bringen, einer Linie zu folgen. Das ist die Elementarste aller Aufgaben. Das Aufgabenblatt dazu finden Sie [hier](04-Linie-Folgen.pdf). 
 
 ### Licht Folgen
 
-In dieser Aufgabe solle Sie Ihren Roboter dazu bringen mithilfe der beiden Photowiderstände einem Licht zu folgen. Das Aufgabenblatt dazu finden Sie [hier](05-Licht-Folgen.pdf). 
+Jetzt sollen sie den Code ihres Roboters so erweitern, dass er in der Lage ist, mithilfe der beiden Photowiderstände einem Licht zu folgen. Das Aufgabenblatt dazu finden Sie [hier](05-Licht-Folgen.pdf). 
 
 ### Hindernis erkennen 
 
-In dieser Aufgabe sollen Sie Ihren Roboter dazu bringen ein Hindernis mit dem Ultraschallsensor zu erkennen und darauf zu reagieren. Das Aufgabenblatt dazu finden Sie [hier](06-Hindernis-Erkennung.pdf).
+Die nächste Programmieraufgabe für ihren Roboter besteht darin, ein Hindernis mit dem Ultraschallsensor zu erkennen und darauf zu reagieren. Das Aufgabenblatt dazu finden Sie [hier](06-Hindernis-Erkennung.pdf).
 
 ### Hindernis überholen
 
-Als Königsdiziplin der Linienroboter sollen Sie Ihren Roboter dazu bringen ein Hindernis zu überholen. Das Aufgabenblatt dazu finden Sie [hier](07-Hindernis-Überholen.pdf).
+Als Königsdiziplin der Linienroboter sollen Sie Ihrem Roboter ermöglichen, ein Hindernis zu überholen. Das Aufgabenblatt dazu finden Sie [hier](07-Hindernis-Überholen.pdf).
 
 ### Webserver
 
