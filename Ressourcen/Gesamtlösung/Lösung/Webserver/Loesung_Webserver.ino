@@ -1,3 +1,5 @@
+#include "Webserver.cpp"
+
 // Pins
 #define TURN_SIGNAL_LEFT 13
 #define TURN_SIGNAL_RIGHT 14
@@ -14,6 +16,8 @@
 // Constants
 int SPEED = 75; // Min: 0; Max: 255;
 int MIN_DISTANCE = 15;
+
+Webserver server;
 
 bool blackLine = true;
 bool leftSensor = true;
@@ -38,11 +42,67 @@ void setup() {
 
   // Config Beeper
   ledcAttach(BEEPER, 450, 8);
+
+  // Start Webserver
+  server.start("ESP32", "");
 }
 
 
 void loop() {
-  followLine();
+  // IO switch
+  if(!server.getIOSwitch()){
+    analogWrite(MOTOR_LEFT, 0);
+    analogWrite(MOTOR_RIGHT, 0);
+    digitalWrite(TURN_SIGNAL_LEFT, 0);
+    digitalWrite(TURN_SIGNAL_RIGHT, 0);
+    ledcWrite(BEEPER, 0);
+    return;
+  };
+
+  // Settings
+  blackLine = server.isBlackLine();
+
+  // Function calls
+  if(server.getObstacleButton()){
+    if(obstacleScan()) return;
+  }
+
+  if(server.getLineButton()){
+    followLine();
+    return;
+  }
+  if(server.getLightButton()){
+    followLight();
+    return;
+  }
+
+  if(server.getPadFor()){
+    analogWrite(MOTOR_LEFT, SPEED);
+    analogWrite(MOTOR_RIGHT, SPEED);
+  }
+  if(server.getPadRight()){
+    analogWrite(MOTOR_LEFT, SPEED);
+    analogWrite(MOTOR_RIGHT, 0);
+  }
+  if(server.getPadBack()){
+    // No backward drive compatibility
+    // Placeholder for additional functionality
+  }
+  if(server.getPadLeft()){
+    analogWrite(MOTOR_LEFT, 0);
+    analogWrite(MOTOR_RIGHT, SPEED);
+  }
+
+  if(!server.getPadFor() && !server.getPadRight() && !server.getPadBack() && !server.getPadLeft() && !server.getLineButton() && !server.getLightButton()) {
+    analogWrite(MOTOR_LEFT, 0);
+    analogWrite(MOTOR_RIGHT, 0);
+  }
+
+  if(server.getHornButton()){
+    ledcWrite(BEEPER, 8);
+  }else {
+    ledcWrite(BEEPER, 0);
+  }
 }
 
 /**
