@@ -39,11 +39,11 @@ Als Königsdiziplin der Linienroboter sollen Sie Ihrem Roboter ermöglichen, ein
 
 ### Webserver
 
-Um Ihren Linienroboter fernsteuern zu können, steht Ihnen der Code für einen Webserver zur Verfügung. Über diesen Webserver können Sie den Roboter bequem über eine Website steuern. Das zugehörige Dokument mit weiteren Details finden Sie [hier](Webanwendung_ESP_Linienroboter_pdf.pdf).
+Um Ihren Linienroboter fernsteuern zu können, steht Ihnen der Code für einen Webserver zur Verfügung. Über diesen Webserver können Sie den Roboter bequem über eine Website steuern. Das zugehörige Dokument mit weiteren Details finden Sie [hier](08-Webserver.pdf). Die benötigte Webserver-Bibliothek finden Sie [hier](Webserver.cpp).
 
 ### Gesamtlösung
 
-Zum testen, ob alles richtig gelötet wurde, können sie hier die Gesamtlösung in einer Zipdatei [herunterladen](Loesung.zip).
+Hier finden Sie sowohl eine [Gesamtlösung](Loesung.zip) als auch eine Lösung [ohne Webserver](Loesung.ino).
 
 ## Ansprechpartner
 
