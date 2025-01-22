@@ -41,7 +41,8 @@ Als Königsdiziplin der Linienroboter sollen Sie Ihrem Roboter ermöglichen, ein
 
 Um Ihren Linienroboter fernsteuern zu können, steht Ihnen der Code für einen Webserver zur Verfügung. Über diesen Webserver können Sie den Roboter bequem über eine Website steuern. Das zugehörige Dokument mit weiteren Details finden Sie hier.
 
-###Gesamtlösung
+### Gesamtlösung
+
 Zum testen, ob alles richtig gelötet wurde, können sie hier die Gesamtlösung [herunterladen](Ressourcen/Gesamtlösung/Lösung/Loesung.ino).
 
 ## Ansprechpartner
