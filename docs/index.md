@@ -43,7 +43,7 @@ Um Ihren Linienroboter fernsteuern zu können, steht Ihnen der Code für einen W
 
 ### Gesamtlösung
 
-Zum testen, ob alles richtig gelötet wurde, können sie hier die Gesamtlösung in einer Zipdatei [herunterladen](docs/Loesung.zip).
+Zum testen, ob alles richtig gelötet wurde, können sie hier die Gesamtlösung in einer Zipdatei [herunterladen](/Loesung.zip).
 
 ## Ansprechpartner
 
