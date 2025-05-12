@@ -7,27 +7,29 @@ lang-ref: index
 
 ## Kurzer Überblick
 
-Hallo und Willkommen zu Ihrem Praktikum bei WAGO. In diesem Modul geht es darum, einen Linienroboter aufzubauen, zu löten und zu programmieren. Zuerst sollten Sie sicherstellen, dass alle Bauteile in dem Bauteilsatz vollständig sind. Eine Liste aller Bauteile und welche Bauteile Sie für welche Aufgaben benötigen finden Sie [hier](Material.pdf). Bei Problemen oder Rückfragen können Sie sich gerne an [Herrn Rehburg oder Herrn Lauxtermann wenden](#ansprechpartner).
+Hallo und willkommen zum Praktikum bei WAGO. In diesem Modul geht es darum, einen Linienroboter aufzubauen. Dieser kann, wie der Name vermuten lässt, einer Linie folgen. 
+Je nach Umfang des Praktikums können aber auch weitere Funktionen implementiert werden, wie dem Überholen eines Hindernisses oder dem Folgen einer Taschenlampe. Dazu muss der Roboter zunächst montiert und gelötet werden, um anschließend die genannten Funktionen programmieren zu können.
+Bei Problemen oder Rückfragen können Sie sich gerne an unsere [Ansprechpartner](#ansprechpartner) wenden.
 
 ## Einführung
 
-In der [Einführung](01-ESP-Einführung.pdf) sollen Sie sich zurerst mit der Arduino IDE bekanntmachen und sich elektro- und informationstechnische Grundlagen aneignen, damit Sie später ohne Probleme mit dem Linienroboter umgehen können. Zuerst sollten Sie dafür in der [Materialliste](Material.pdf) sichergehen, dass Sie alle nötigen Bauteile dafür haben. Die Teile für die Einleitung sind nicht in dem Bauteilsatz enthalten. Bei der Bewältigung der Einführung könnte Ihnen [dieses Diagramm von den Pins des ESP32](00-Pinout-ESP32-DEVKIT-V1.pdf) und [dieser Arduino Cheat Sheet](00-CheatSheet-Arduino.pdf) helfen.
+In der [Einführung](01-ESP-Einführung.pdf) sollen Sie sich mit der Arduino IDE vertraut machen und elektro- sowie informationstechnische Grundlagen erlernen, um später den Linienroboter problemlos aufbauen zu können. Zuerst sollten Sie mithilfe der [Materialliste](Material.pdf) sichergehen, dass Sie alle nötigen Bauteile haben. Die Bauteile für diese Einleitung sind nicht in dem Bauteilsatz enthalten. Bei der Durchführung der Einführung könnte Ihnen [dieses Diagramm von den Pins des ESP32](00-Pinout-ESP32-DEVKIT-V1.pdf) und [dieser Arduino Cheat Sheet](00-CheatSheet-Arduino.pdf) helfen.
 
 ## Aufbauanleitung
 
-Wenn Sie sichergestellt haben dass der Bauteilsatz vollständig ist, können Sie mit dem Aufbau starten. Um den Roboter aufbauen zu können, werden alle Bauteile in dem WAGO-Karton benötigt. Bevor Sie mit dem Löten anfangen, geben Sie einem Betreuer bescheid. Folgen Sie dann der [Lötanleitung](02-Lötanleitung.pdf) und anschließed der [Aufbauanleitung](03-Aufbau.pdf).
+Wenn Sie sichergestellt haben, dass der Bauteilsatz vollständig ist, können Sie mit dem Aufbau starten. Um den Roboter aufbauen zu können, werden alle Bauteile in dem WAGO-Karton benötigt. Bevor Sie mit dem Löten anfangen, geben Sie einem Betreuer Bescheid. Folgen Sie dann der [Lötanleitung](02-Lötanleitung.pdf) und anschließed der [Aufbauanleitung](03-Aufbau.pdf).
 
 ## Programmieraufgaben für den Roboter
 
-Nach einem Erfolgreichem Aufbau gibt es verschiedene Aufgaben zum bearbeiten. Diese Aufgaben bauen aufeinadner auf und sollten der Reihe nach bearbeitet werden. 
+Nach dem erfolgreichen Aufbau können nun die verschiedenen Funktionen programmiert werden. Diese Aufgaben bauen aufeinadner auf und sollten daher in der dargestellten Reihenfolge bearbeitet werden. 
 
 ### Linie Folgen
 
-In dieser Aufgabe sollen Sie Ihren Roboter dazu bringen, einer Linie zu folgen. Das ist die Elementarste aller Aufgaben. Das Aufgabenblatt dazu finden Sie [hier](04-Linie-Folgen.pdf). 
+In dieser Aufgabe sollen Sie Ihren Roboter dazu bringen, einer Linie zu folgen. Das ist die elementarste aller Aufgaben. Das Aufgabenblatt dazu finden Sie [hier](04-Linie-Folgen.pdf). 
 
 ### Licht Folgen
 
-Jetzt sollen sie den Code ihres Roboters so erweitern, dass er in der Lage ist, mithilfe der beiden Photowiderstände einem Licht zu folgen. Das Aufgabenblatt dazu finden Sie [hier](05-Licht-Folgen.pdf). 
+Jetzt sollen sie den Code so erweitern, dass der Roboter in der Lage ist, mithilfe der beiden Photowiderstände einem Licht zu folgen. Das Aufgabenblatt dazu finden Sie [hier](05-Licht-Folgen.pdf). 
 
 ### Hindernis erkennen 
 
@@ -47,6 +49,6 @@ Hier finden Sie sowohl eine [Gesamtlösung](Loesung.zip) als auch eine Lösung [
 
 ## Ansprechpartner
 
-<maik.rehburg@wago.com>
-
-<tobias.lauxtermann@wago.com>
+- [André Bell](mailto:Andre.Bell@wago.com)
+- [Tobias Lauxtermann](mailto:Tobias.Lauxtermann@wago.com)
+- [Maik Rehburg](mailto:Maik.Rehburg@wago.com)
