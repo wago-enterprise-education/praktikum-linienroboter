@@ -1,7 +1,6 @@
 name: Linienroboter
 title: Linienroboter
-author: Louis Krumme
-email: finnerik.hilgers@WAGO.com
+author: Maik Rehburg
 remote_theme: wago-enterprise-education/wago-github-pages-theme
 lang: de
 plugins:
