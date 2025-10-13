@@ -92,6 +92,7 @@ Bisher haben wir einen Pin als Ausgang definiert und benutzt. Ebenso wichtig ist
 Ergänze daher deinen Aufbau um die folgenden Komponenten:
 
 <img src="img/breadboard3.png" alt="ESP32 mit digitalem Eingang (Taster) und digitalem Ausgang (LED)">
+
 Die LED ist weiterhin an Pin 12 angeschlossen. Die Konfiguration können wir daher beibehalten. Zusätzlich ist jetzt ein Taster an Pin 15 hinzugekommen. Definieren Sie auch dafür wieder einen Platzhalter und konfigurieren Sie den Pin als Eingang. 
 Die LED ist weiterhin an Pin 12 angeschlossen. Die Konfiguration können wir daher beibehalten. Zusätzlich ist jetzt ein Taster an Pin 15 hinzugekommen. Definiere auch dafür wieder einen Platzhalter und konfiguriere ihn als Eingang. Nutze dafür die Syntax, die du aus den vorherigen Aufgaben kennst.
 Jetzt wollen wir lesen, ob der Taster betätigt wird oder nicht. Da dies durchgehend geprüft werden soll, wird auch dies in der loop()-Funktion programmiert. Wir nutzen die Funktion: 
@@ -132,3 +133,31 @@ if (Bedingung){
 }
 ```
 Versuche nun, die LED dann anzuschalten, wenn der Taster gedrückt ist.
+
+### Aufgabe 5
+#### Funktionsweise eines Potentiometer
+Für die Programmierung des Roboters brauchen wir später nicht nur digitale Ein- und Ausgänge, sondern auch analoge.
+Die können nicht nur HIGH oder LOW sein, sondern mehrere verschiedene (Zahlen-)Werte annehmen.
+Um zunächst verschiedene Werte an einem Eingang zu lesen, nutzen wir ein Potentiometer. Das ist ein mechanisch einstellbarer Widerstand.
+Der Widerstandswert zwischen den beiden äußeren Anschlüssen ist fest. Am mittleren, dritten Anschluss ist der bewegliche Kontakt, dessen Widerstand man durch Drehen verstellen kann. Wenn man an die äußeren Anschlüsse eine Spannung anlegt, erhält man einen einstellbaren Spannungsteiler. Was das bedeutet, können wir mit einem Multimeter anschauen. Baue dafür die abgebildete Schaltung auf. Miss dann mit einem Multimeter zuerst die Spannung zwischen den äußeren Anschlüssen des Potentiometers und dann die zwischen dem mittleren Anschluss und dem Ground-Anschluss. 
+Was passiert, wenn man am Potentiometer dreht? 
+
+#### Einlesen analoger Eingänge
+Die Gesamtspannung an den äußeren Anschlüssen teilt sich entsprechend des Widerstandsverhältnisses auf. Wenn man durch Drehen den Widerstand verändert, verändert sich auch die Spannung, die über dem Teil-Widerstand abfällt. Das können wir auch am Anschluss des ESP32 messen und für unser Programm nutzen.
+Die Funktion, die wir dafür nutzen lautet `analogRead(<Pin>);`
+Diese liest den analogen Eingang aus. Wie bei der vorherigen Aufgabe kann man den Wert auch in einer Variablen speichern. Dieser Rückgabewert ist vom Typ `int`. Die Funktion `analogRead()` kann Werte zwischen 0 und 4095 einlesen.
+
+#### Schreiben analoger Ausgänge
+Jetzt wollen wir durch das Drehen des Potentiometers eine LED dimmen. Dafür nutzen wir die Funktion:
+
+```C
+analogWrite(<Pin>, <Wert>);
+```
+Mit `analogWrite()` kann man 256 verschiedene Helligkeiten einer LED einstellen, angefangen mit 0 für aus und 255 für volle Stärke.
+Unpraktischerweise kann man 4096 verschiedene Werte einlesen aber nur 256 Werte ausgeben. Um diese miteinander zu verbinden, verwendet man den Befehl `map()`.
+Der Befehl wird so verwendet:
+
+```C
+map(analogRead(<Pin>),0,4096,0,255);
+```
+Versuche, den Befehl selbst nachzuvollziehen oder nimm das Cheatsheet zur Hilfe.
