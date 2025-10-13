@@ -171,3 +171,8 @@ Um den Ton des Beeper verändern zu können, muss man sich der Funktion `ledcWri
 Mit diesem ist es möglich im Gegensatz zu `analogWrite()` nicht die Abstände zwischen zwei Stromimpulsen, sondern die Frequenz des Signals zu ändern, wodurch sich der Ton ändert.
 Um `ledcWrite()` verwenden zu können, müssen wir den Pin zusätzlich zum `pinMode()` mit `ledcAttach(<Pin>,<Frequenz>,8)` im Setup initialisieren.
 Der Ton verändert sich mit der eingestellten Frequenz. Probiere verschiedene Frequenzen aus – welcher Ton ist am angenehmsten? Merke dir den zugehörigen Wert; den Beeper brauchen wir später als Hupe für den Roboter!
+
+<div class="container">
+    <div class="one"><-Startseite</div>
+  <div class="three">Aufbauanleitung-></div>
+</div>
