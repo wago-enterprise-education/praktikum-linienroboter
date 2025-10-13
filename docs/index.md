@@ -12,11 +12,6 @@ Je nach Umfang des Praktikums können aber auch weitere Funktionen, wie das Übe
 Dazu muss der Roboter zunächst montiert und gelötet werden, um anschließend die genannten Funktionen programmieren zu können.
 Bei Problemen oder Rückfragen kannst du dich gerne an unsere [Ansprechpartner](#ansprechpartner) wenden.
 
-## Einführung
-
-In der [Einführung](01-ESP-Einführung.pdf) sollst du dich zunächst mit der Arduino IDE vertraut machen und elektro- sowie informationstechnische Grundlagen erlernen, um später den Linienroboter problemlos aufbauen zu können.
-Zuerst solltest mithilfe der [Materialliste](Material.pdf) sichergehen, alle nötigen Bauteile zusammensuchen. Die Bauteile für diese Einleitung sind nicht in dem Bauteilsatz enthalten. Bei der Durchführung der Einführung kann dir [dieses Diagramm von den Pins des ESP32](00-Pinout-ESP32-DEVKIT-V1.pdf) und [dieser Arduino Cheat Sheet](00-CheatSheet-Arduino.pdf) helfen.
-
 ## Aufbauanleitung
 
 Wenn du sichergestellt hast, dass der Bauteilsatz vollständig ist, kannst du mit dem Aufbau starten. Um den Roboter aufbauen zu können, werden alle Bauteile in dem WAGO-Karton benötigt.
