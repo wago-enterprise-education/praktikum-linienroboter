@@ -53,4 +53,4 @@ Um den Linienroboter fernsteuern zu können, steht der Code für einen Webserver
 - [Tobias Lauxtermann](mailto:Tobias.Lauxtermann@wago.com)
 - [Maik Rehburg](mailto:Maik.Rehburg@wago.com)
 
-<div style="text-align:right"><a href="./Einfuehrung.md">Einführung -></a></style>
+<div style="text-align:right"><a href="./Einfuehrung.md">Einführung -></a></div>
