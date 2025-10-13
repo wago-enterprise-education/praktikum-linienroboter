@@ -167,6 +167,9 @@ Versuche, den Befehl selbst nachzuvollziehen oder nimm das [Cheatsheet](00-Cheat
 
 ### Aufgabe 6
 Genauso, wie du in der vorherigen Aufgabe die LED über einen analogen Wert angesteuert hast, kann man zum Beispiel auch einen „Beeper“, das ist ein kleiner Lautsprecher, ansteuern.
+
+<img src="img/breadboard5.png" alt="ESP mit Beeper">
+
 Um den Ton des Beeper verändern zu können, muss man sich der Funktion `ledcWrite(<Pin>,<Wert>)` bedienen.
 Mit diesem ist es möglich im Gegensatz zu `analogWrite()` nicht die Abstände zwischen zwei Stromimpulsen, sondern die Frequenz des Signals zu ändern, wodurch sich der Ton ändert.
 Um `ledcWrite()` verwenden zu können, müssen wir den Pin zusätzlich zum `pinMode()` mit `ledcAttach(<Pin>,<Frequenz>,8)` im Setup initialisieren.
