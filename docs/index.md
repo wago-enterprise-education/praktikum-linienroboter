@@ -19,7 +19,7 @@ Zuerst solltest mithilfe der [Materialliste](Material.pdf) sichergehen, alle nö
 
 ## Aufbauanleitung
 
-Wenn du sichergestellt hast, dass der Bauteilsatz vollständig ist, kannst du mit dem Aufbau starten. Um den Roboter aufbauen zu können, werden alle Bauteile in dem WAGO-Karton benötigt. 
+Wenn du sichergestellt hast, dass der Bauteilsatz vollständig ist, kannst du mit dem Aufbau starten. Um den Roboter aufbauen zu können, werden alle Bauteile in dem WAGO-Karton benötigt.
 Bevor du mit dem Löten anfängst, gib einem Betreuer Bescheid. Folge dann der [Lötanleitung](02-Lötanleitung.pdf) und anschließed der [Aufbauanleitung](03-Aufbau.pdf).
 
 ## Programmieraufgaben für den Roboter
