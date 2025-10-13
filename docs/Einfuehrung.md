@@ -16,7 +16,7 @@ Diese und die kommenden Anleitungen sollen dich bei deinem Praktikum unterstütz
 ### Grundsätzliches
 Wir beginnen mit dem Mikrocontroller, der den Roboter am Ende steuern wird. Das ist ein ESP32-Entwicklungsboard.
 
-<img scr="img/ESP32.png" alt="Abbildung eines ESP32 DEV Board">
+<img src="img/ESP32.png" alt="Abbildung eines ESP32 DEV Board">
 
 Der eigentliche Mikrocontroller ist das silberne Quadrat in der oberen Hälfte. Der Rest sind bspw. eine WLAN-Antenne und die Stromversorgung des Mikrocontroller. Solche Mikrocontroller können z.B. für die Auswertung von Sensordaten, die Datenaufnahme oder kleinere Berechnungen eingesetzt werden.
 Die Metallstifte an der Seite sind die Anschlüsse für verschiedene Schnittstellen, die der Mikrocontroller unterstützt. Wir nennen sie „Pins“. Welcher Metallstift welche Schnittstelle [unterstützt](00-Pinout-ESP32-DEVKIT-V1.pdf) unterscheidet sich, je nachdem welches Entwicklungsboard man verwendet. Wenn du also selbst zu Hause mit einem ESP32-Board arbeiten möchtest, musst du immer die passende Pin-Belegung („Pinout“) suchen.
@@ -85,4 +85,50 @@ Damit „weiß“ das Programm, dass dieser Pin, an den die LED über den Vorwid
 Ein digitaler Wert hat immer zwei Zustände: 0 und 1 bzw. true/false, HIGH/LOW.
 Um einen Ausgang ein- oder auszuschalten, muss die Funktion `digitalWrite(LED, HIGH);` aufgerufen werden.
 Mit HIGH wird die LED eingeschaltet. Um sie wieder auszuschalten, schreibt man LOW statt HIGH. Eine blinkende LED schaltet sich in festgelegten Abständen immer wieder an und aus. Um diesen Abstand zu programmieren, nutzt man `delay(<Zeit in Millisekunden>);`
-Schreibe nun ein Programm, welches anhand der nun bekannte Funktionen die LED alle zwe Sekunden für 2 Sekunden blinken lässt.
+Schreibe nun ein Programm, welches anhand der nun bekannte Funktionen die LED alle 2 Sekunden für 2 Sekunden blinken lässt.
+
+### Aufgabe 4
+Bisher haben wir einen Pin als Ausgang definiert und benutzt. Ebenso wichtig ist es, Eingänge lesen zu können.
+Ergänze daher deinen Aufbau um die folgenden Komponenten:
+
+<img src="img/breadboard3.png" alt="ESP32 mit digitalem Eingang (Taster) und digitalem Ausgang (LED)">
+Die LED ist weiterhin an Pin 12 angeschlossen. Die Konfiguration können wir daher beibehalten. Zusätzlich ist jetzt ein Taster an Pin 15 hinzugekommen. Definieren Sie auch dafür wieder einen Platzhalter und konfigurieren Sie den Pin als Eingang. 
+Die LED ist weiterhin an Pin 12 angeschlossen. Die Konfiguration können wir daher beibehalten. Zusätzlich ist jetzt ein Taster an Pin 15 hinzugekommen. Definiere auch dafür wieder einen Platzhalter und konfiguriere ihn als Eingang. Nutze dafür die Syntax, die du aus den vorherigen Aufgaben kennst.
+Jetzt wollen wir lesen, ob der Taster betätigt wird oder nicht. Da dies durchgehend geprüft werden soll, wird auch dies in der loop()-Funktion programmiert. Wir nutzen die Funktion: 
+
+```C
+digitalRead(<Pin>);
+```
+Dafür geben wir an, welchen Pin wir auslesen wollen. Die Funktion gibt dann entweder HIGH oder LOW zurück. Diesen Wert speichern wir um ihn anschließend weiterzuverwenden. Dafür legen wir eine Variable an. Variablen sind die Speicher eines Programms und haben immer einen Typ, einen Namen und einen Wert. Der Typ legt fest, was in der Variable gespeichert werden kann. Das Anlegen funktioniert nach dem folgenden Schema:
+
+```
+<Typ> <Name> = <Wert>;
+```
+Die Variable, die wir anlegen, muss vom gleichen Typ wie der Rückgabewert der Funktion sein. Zahlenwerte sind meist sogenannte Integer `int`, digitale Werte sind boolsche Variablen `bool`.
+Da wir einen digitalen Wert einlesen, erhalten wir entweder HIGH oder LOW bzw. true oder false.
+Wir können die Variable so deklarieren:
+
+```C
+bool tasterWert;
+tasterWert = digitalRead(<PIN>);
+```
+Um den Zustand einer Variablen zu überprüfen, kann man _if-Bedingungen_ verwenden.
+Beispiel: Wenn es kalt ist, mache die Heizung an:
+
+```C
+if (Raum == kalt){
+    Heizung = an;
+}
+```
+If-Statements können beliebig ergänzt werden:
+
+```C
+if (Bedingung){
+    Anweisung 1;
+} elsif {
+    Anweisung 2;
+} else{
+    Anweisung 3;
+}
+```
+Versuche nun, die LED dann anzuschalten, wenn der Taster gedrückt ist.
