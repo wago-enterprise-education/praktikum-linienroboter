@@ -143,6 +143,9 @@ Der Widerstandswert zwischen den beiden äußeren Anschlüssen ist fest. Am mitt
 Was passiert, wenn man am Potentiometer dreht? 
 
 #### Einlesen analoger Eingänge
+
+<img src="img/breadboard4.png" alt="Taster durch Potenziometer ersetzt">
+
 Die Gesamtspannung an den äußeren Anschlüssen teilt sich entsprechend des Widerstandsverhältnisses auf. Wenn man durch Drehen den Widerstand verändert, verändert sich auch die Spannung, die über dem Teil-Widerstand abfällt. Das können wir auch am Anschluss des ESP32 messen und für unser Programm nutzen.
 Die Funktion, die wir dafür nutzen lautet `analogRead(<Pin>);`
 Diese liest den analogen Eingang aus. Wie bei der vorherigen Aufgabe kann man den Wert auch in einer Variablen speichern. Dieser Rückgabewert ist vom Typ `int`. Die Funktion `analogRead()` kann Werte zwischen 0 und 4095 einlesen.
@@ -160,4 +163,6 @@ Der Befehl wird so verwendet:
 ```C
 map(analogRead(<Pin>),0,4096,0,255);
 ```
-Versuche, den Befehl selbst nachzuvollziehen oder nimm das Cheatsheet zur Hilfe.
+Versuche, den Befehl selbst nachzuvollziehen oder nimm das [Cheatsheet](00-CheatSheet-Arduino.pdf) zur Hilfe.
+
+### Aufgabe 6
