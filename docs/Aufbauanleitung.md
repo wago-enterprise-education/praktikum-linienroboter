@@ -4,7 +4,7 @@ title: Linienroboter - Montage
 lang: de
 lang-ref: index
 ---
-## Montageanleitung
+## Aufbauanleitung
 Diese Anleitung soll dich durch den gesamten Aufbauprozess des Roboters führen. Damit dieser möglichst geordnet abläuft solltest du auch hier zunächst prüfen, ob [du alle Bauteile hast](Material.pdf).
 ### Löten
 
