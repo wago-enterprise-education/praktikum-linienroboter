@@ -15,7 +15,7 @@ Die Messung wird gestartet durch:
     delayMicroseconds(10);
     digitalWrite(<ABSTAND_TRIGGER>, LOW);
     Time = pulseIn(DISTANCEECHO, HIGH); // Receive Signal
-    Distance = (Time/2)*0,03432; // Distance in cm
+    Distance = (Time/2)*0.03432; // Distance in cm
 ```
 
 {:.info}
