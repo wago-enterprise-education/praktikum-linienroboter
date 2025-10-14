@@ -7,6 +7,8 @@ lang-ref: index
 ## Webserver
 Um den Linienroboter fernsteuern zu können, steht der Code für einen Webserver zur Verfügung. Über diesen Webserver kann man den Roboter bequem über eine Website steuern.
 
+<img src="img/webserver.png" alt="Bildschirmfoto der Webanwendung">
+
 ### Vorbereitung
 Um den Webserver nutzen zu können, müssen die Arduino IDE einige Bibliotheken hinzugefügt werden:
 + "ESP Async WebServer" von "ESP32Async"
