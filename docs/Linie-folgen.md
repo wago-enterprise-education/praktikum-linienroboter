@@ -5,7 +5,7 @@ lang: de
 lang-ref: index
 ---
 
-## Linie-Folgen
+## Linie folgen
 
 <span style="color: red; font-weight: bold; text-decoration: underline;">Achtung:</span>
 Die Steckbrücke auf dem 2-poligen Stecker, also der Jumper muss <span style="text-decoration: underline;">immer</span> abgezogen werden, wenn der ESP32 über ein USB-Kabel mit deinem PC verbunden ist! Sind die Batterie und der ESP32 gleichzeitig an die Bauteile angeschlossen, kann das zu Problemen führen!
@@ -38,6 +38,7 @@ Nutze den Beeper als Hupe des Roboters. Wenn beide Liniensensoren die Farbe der 
 |                  |                 |
 |:-------------    | -------------:  |
 |<a href="./Aufbauanleitung.html"><- Aufbauanleitung</a>|<a href="./Licht-Folgen.html">Licht folgen -></a>|
+
 
 
 
