@@ -15,11 +15,11 @@ Wenn während des Überholvorganges ein HIndernis auf der linken Spur erkannt wi
 
 Auf der nächsten Seite sind die Schritte noch einmal grafisch erklärt.
 
-<img src="img/hindernis_ueberholen1.png" alt="Ueberholen1" style="width: 100%">
-<img src="img/hindernis_ueberholen2.png" alt="Ueberholen2" style="width: 100%">
+<img src="img/hindernis_ueberholen.png" alt="Ueberholen1">
 
 |            |            |
 |:-----------|-----------:|
 |<a href="./Hindernis-Erkennung.html"><- Hindernis erkennen</a>|<a href="./Webserver.html">Webserver -></a>|
+
 
 
