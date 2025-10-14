@@ -21,5 +21,6 @@ Der ausgelesene Wert lässt sich mithilfe eines zuvor gelernten Befehls in Motor
 
 |                  |                 |
 |:-------------    | -------------:  |
-|<a href="./Linie-Folgen.html"><- Aufbauanleitung</a>|<a href="./Hindernis-Erkennung.html">Licht Folgen -></a>|
+|<a href="./Linie-folgen.html"><- Aufbauanleitung</a>|<a href="./Hindernis-Erkennung.html">Licht Folgen -></a>|
+
 
