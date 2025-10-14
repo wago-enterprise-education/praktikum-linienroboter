@@ -66,4 +66,4 @@ Am besten geht man nach folgender Schritt-für-Schritt-Anleitung vor:
 
 |            |            |
 |:-----------|-----------:|
-|<a href="./Einfuehrung.html"><- Einführung</a>|<a href="Linie-folgen.html">Linie-folgen</a>|
+|<a href="./Einfuehrung.html"><- Einführung</a>|<a href="Linie-folgen.html">Linie-folgen -></a>|
