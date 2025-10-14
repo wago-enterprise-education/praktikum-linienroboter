@@ -16,11 +16,8 @@ Auf der Platine ist der Fotowiderstand in einem Spannungsteiler mit einem 470 �
 Lass dir die Werte der Sensoren zunächst im Seriellen Monitor ausgeben umd schaue, wie sich die Werte entwickeln, wenn sich die Helligkeit verändert. Da das Tageslicht durch ein Fenster viel stärker ist als das einer Taschenlampe, müssen z. B. auch verschiedene Tageszeiten oder die Helligkeit in Räumen beachtet werden.
 
 Der ausgelesene Wert lässt sich mithilfe eines zuvor gelernten Befehls in Motorstärke „umformen“. Da für den Befehl die übergebenen Werte nur innerhalb eines bestimmten Bereichs sein dürfen, verwenden wir den Befehl
-
 `constrain(x, minWert, maxWert);`
 
 |                  |                 |
 |:-------------    | -------------:  |
 |<a href="./Linie-folgen.html"><- Aufbauanleitung</a>|<a href="./Hindernis-Erkennung.html">Licht Folgen -></a>|
-
-
