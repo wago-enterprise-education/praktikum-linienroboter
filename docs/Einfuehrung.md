@@ -176,3 +176,6 @@ Um `ledcWrite()` verwenden zu können, müssen wir den Pin zusätzlich zum `pinM
 Der Ton verändert sich mit der eingestellten Frequenz. Probiere verschiedene Frequenzen aus – welcher Ton ist am angenehmsten? Merke dir den zugehörigen Wert; den Beeper brauchen wir später als Hupe für den Roboter!
 
 <table width=100% border=0><tr><td align=left><a href="./index.html"><- Startseite</a></td><td align=right><a href="./linie-folgen.html">Linie folgen -></a></td></tr></table>
+
+|-------------|--------------:|
+|<- Startseite|Linie folgen ->|
