@@ -17,6 +17,8 @@ Die Messung wird gestartet durch:
     Time = pulseIn(DISTANCEECHO, HIGH); // Receive Signal
     Distance = (Time/2)*0,03432; // Distance in cm
 ```
+{:.info}
+Der Pin `ABSTAND_TRIGGER` gibt einen Ultrschallton aus, ist also ein _Output_. Das Mikrofon `DISTANCEECHO`, zeichnet die Länge auf, die der Schall nachläuft, wenn der Ton nicht mehr generiert wird. Es mus daher als _INPUT_ initialisiert werden. 
 
 Füge anschließend den Hindernis-Sensor zum Programm hinzu. Der Roboter soll in keinem Fahrmodus (Licht oder Linie Folgen) mit einem Hindernis kollidieren.
 
