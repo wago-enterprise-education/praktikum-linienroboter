@@ -1,0 +1,17 @@
+//
+Damit der Roboter Hindernisse erkennt, nutzen wir einen Ultraschall-Sensor. 
+
+Die Messung wird gestartet durch:
+```C
+    digitalWrite(<ABSTAND_TRIGGER>, HIGH);
+    delayMicroseconds(10);
+    digitalWrite(<ABSTAND_TRIGGER>, LOW);
+    Time = pulseIn(DISTANCEECHO, HIGH); // Receive Signal
+    Distance = (Time/2)*0,03432; // Distance in cm
+```
+
+Fügen Sie anschließend den Hindernis-Sensor zu Ihrem Programm hinzu. Der Roboter soll in keinem Fahrmodus (Licht oder Linie Folgen) mit einem Hindernis kollidieren.
+
+So sieht das Signal des Ultraschallsensors aus.
+
+<img src="img/ultraschallsensor.png" alt="Funktion des Ultraschallsensors">
