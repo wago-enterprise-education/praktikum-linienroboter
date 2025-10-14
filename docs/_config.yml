@@ -3,6 +3,9 @@ title: Linienroboter
 author: Maik Rehburg
 remote_theme: wago-enterprise-education/wago-github-pages-theme
 lang: de
+markdown: kramdown
+kramdown:
+  math_engine: mathjax
 plugins:
 - jemoji
 - jekyll-redirect-from
