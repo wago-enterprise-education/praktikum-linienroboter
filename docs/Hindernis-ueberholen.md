@@ -5,7 +5,7 @@ lang: de
 lang-ref: index
 ---
 
-## Hindernis-Ueberholen
+## Hindernis überholen
 
 Jetzt nutzen wir die Linien- und Hindernissensoren in Kombination, um ein HIndernis zu Überholen. Baue dafür als erstes mit drei Linien auf dem Boden eine zweispurige Straße auf.
 
@@ -20,6 +20,7 @@ Auf der nächsten Seite sind die Schritte noch einmal grafisch erklärt.
 |            |            |
 |:-----------|-----------:|
 |<a href="./Hindernis-Erkennung.html"><- Hindernis erkennen</a>|<a href="./Webserver.html">Webserver -></a>|
+
 
 
 
