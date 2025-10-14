@@ -178,4 +178,4 @@ Der Ton verändert sich mit der eingestellten Frequenz. Probiere verschiedene Fr
 
 |                  |                 |
 |:-------------    | -------------:  |
-|<a href="./index.html"><- Startseite</a>|<a href="./linie-folgen.html">Linie Folgen -></a>|
+|<a href="./index.html"><- Startseite</a>|<a href="./Aufbauanleitung.html">Aufbauanleitung -></a>|
