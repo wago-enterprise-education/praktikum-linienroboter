@@ -34,7 +34,9 @@ Nutze die LEDs auf der Platine als Blinker des Roboters. Es soll die linke LED b
 Nutze den Beeper als Hupe des Roboters. Wenn beide Liniensensoren die Farbe der Linie erkennen, soll die Hupe "betätigt werden"
 
 
+
 |                  |                 |
 |:-------------    | -------------:  |
-|<a href="./Aufbauanleitung.html"><- Aufbauanleitung</a>|<a href="./Licht-folgen.html">Licht Folgen -></a>|
+|<a href="./Aufbauanleitung.html"><- Aufbauanleitung</a>|<a href="./Licht-Folgen.html">Licht Folgen -></a>|
+
 
