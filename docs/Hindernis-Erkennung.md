@@ -26,4 +26,5 @@ So sieht das Signal des Ultraschallsensors aus.
 
 |                  |                 |
 |:-------------    | -------------:  |
-|<a href="./Licht-Folgen.html"><- Licht folgen</a>|<a href="./Hindernis-ueberholen.html">Hindernis Überholen -></a>|
+
+|<a href="./Licht-Folgen.html"><- Licht folgen</a>|<a href="./Hindernis-ueberholen.html">Hindernis überholen -></a>|
