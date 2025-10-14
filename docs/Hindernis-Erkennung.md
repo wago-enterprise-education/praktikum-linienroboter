@@ -1,4 +1,12 @@
-//
+---
+layout: page
+title: Linienroboter - Hindernis erkennen
+lang: de
+lang-ref: index
+---
+
+
+## Hinderniserkennung
 Damit der Roboter Hindernisse erkennt, nutzen wir einen Ultraschall-Sensor. 
 
 Die Messung wird gestartet durch:
@@ -15,3 +23,7 @@ Fügen Sie anschließend den Hindernis-Sensor zu Ihrem Programm hinzu. Der Robot
 So sieht das Signal des Ultraschallsensors aus.
 
 <img src="img/ultraschallsensor.png" alt="Funktion des Ultraschallsensors">
+
+|                  |                 |
+|:-------------    | -------------:  |
+|<a href="./Licht-Folgen.html"><- Licht folgen</a>|<a href="./Hindernis-ueberholen.html">Hindernis Überholen -></a>|
