@@ -21,4 +21,5 @@ Auf der nächsten Seite sind die Schritte noch einmal grafisch erklärt.
 
 |            |            |
 |:-----------|-----------:|
-|<a href="./Hindernis-erkennen.html"><- Hindernis erkennen</a>|<a href="./Webserver.html">Webserver -></a>|
+|<a href="./Hindernis-Erkennung.html"><- Hindernis erkennen</a>|<a href="./Webserver.html">Webserver -></a>|
+
