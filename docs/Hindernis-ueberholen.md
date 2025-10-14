@@ -15,8 +15,8 @@ Wenn während des Überholvorganges ein HIndernis auf der linken Spur erkannt wi
 
 Auf der nächsten Seite sind die Schritte noch einmal grafisch erklärt.
 
-<img scr="img/hindernis_ueberholen_1.png" alt="Hindernis Überholen">
-<img scr="img/hindernis_ueberholen_2.png" alt="Hindernis Überholen">
+<img scr="img/hindernis_ueberholen1.png" alt="Hindernis Überholen">
+<img scr="img/hindernis_ueberholen2.png" alt="Hindernis Überholen">
 
 
 |            |            |
