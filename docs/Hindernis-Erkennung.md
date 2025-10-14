@@ -18,7 +18,7 @@ Die Messung wird gestartet durch:
     Distance = (Time/2)*0,03432; // Distance in cm
 ```
 
-Fügen Sie anschließend den Hindernis-Sensor zu Ihrem Programm hinzu. Der Roboter soll in keinem Fahrmodus (Licht oder Linie Folgen) mit einem Hindernis kollidieren.
+Füge anschließend den Hindernis-Sensor zum Programm hinzu. Der Roboter soll in keinem Fahrmodus (Licht oder Linie Folgen) mit einem Hindernis kollidieren.
 
 So sieht das Signal des Ultraschallsensors aus.
 
