@@ -12,11 +12,6 @@ Je nach Umfang des Praktikums können aber auch weitere Funktionen, wie das Übe
 Dazu muss der Roboter zunächst montiert und gelötet werden, um anschließend die genannten Funktionen programmieren zu können.
 Bei Problemen oder Rückfragen kannst du dich gerne an unsere [Ansprechpartner](#ansprechpartner) wenden.
 
-## Aufbauanleitung
-
-Wenn du sichergestellt hast, dass der Bauteilsatz vollständig ist, kannst du mit dem Aufbau starten. Um den Roboter aufbauen zu können, werden alle Bauteile in dem WAGO-Karton benötigt.
-Bevor du mit dem Löten anfängst, gib einem Betreuer Bescheid. Folge dann der [Lötanleitung](02-Lötanleitung.pdf) und anschließed der [Aufbauanleitung](03-Aufbau.pdf).
-
 ## Programmieraufgaben für den Roboter
 
 Nach dem erfolgreichen Aufbau können nun die verschiedenen Funktionen programmiert werden. Diese Aufgaben bauen aufeinander auf und sollten daher in der dargestellten Reihenfolge bearbeitet werden.
