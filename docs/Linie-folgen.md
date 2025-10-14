@@ -36,5 +36,5 @@ Nutze den Beeper als Hupe des Roboters. Wenn beide Liniensensoren die Farbe der 
 
 |                  |                 |
 |:-------------    | -------------:  |
-
 |<a href="./Aufbauanleitung.html"><- Aufbauanleitung</a>|<a href="./Licht-folgen.html">Licht Folgen -></a>|
+
