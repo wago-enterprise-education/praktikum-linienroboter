@@ -56,7 +56,7 @@ Um dieses richtig verwenden zu können, ist es wichtig, zu wissen, wie dieses ve
 
 #### LEDs
 In dieser Aufgabe soll die **LED** oder Leuchtdiode (_Light emitting diod_) eingeführt werden. 
-Wenn durch eine LED Strom fließt, leuchtet sie. Ist der Strom durch die LED zu groß, brennt sie durch. Um das zu verhindern muss immer ein sogenannter Vorwiderstand zwischen der Stromquelle und der LED („vor der LED“) eingebaut werden. Für die folgenden Aufgaben soll immer ein Widerstand von 220 \u03A9 verwendet werden.
+Wenn durch eine LED Strom fließt, leuchtet sie. Ist der Strom durch die LED zu groß, brennt sie durch. Um das zu verhindern muss immer ein sogenannter Vorwiderstand zwischen der Stromquelle und der LED („vor der LED“) eingebaut werden. Für die folgenden Aufgaben soll immer ein Widerstand von 220 &#8486; verwendet werden.
 Wenn due die LED genau ansiehst, fällt dir auf, dass sie nicht symmetrisch aufgebaut ist, sondern einer der Anschlussdrähte länger ist. Der lange Anschlussdraht ist der Plus-Pol der LED, der kurze der Minus-Pol. An dieser Seite ist auch das Gehäuse der LED abgeflacht, auch daran lassen sich die Seiten unterscheiden.
 Der Strom soll mit dem langen Bein, also dem Plus-Pol verbunden sein.
 Baue nun die Schaltung entsprechend des folgenden Bildes auf:
