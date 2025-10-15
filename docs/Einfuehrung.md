@@ -43,7 +43,7 @@ void loop() {
 }
 ```
 #### Verbindung zum ESP32 herstellen
-Verbinde den ESP32 mit einem microUSB-Kabel mit einem PC. Das passende ESP32-Board (ESP32 DOIT DEVKIT V1) ist in dieser Version der Arduino IDE schon vor-ausgewählt. Stelle als nächstes den Verbindungsport ein. Unter „Werkzeuge > Ports“ werden die möglichen Ports angezeigt. Jetzt kann das Programm in der Arduino IDE das Programm kompiliert und auf den ESP32 geladen werden. Dafür muss das Pfeil-Symbol oben links betätigt werden.
+Verbinde den ESP32 mit einem microUSB-Kabel mit einem PC. Das passende ESP32-Board (ESP32 DOIT DEVKIT V1) ist in dieser Version der Arduino IDE schon vor-ausgewählt. Stelle als nächstes den Verbindungsport ein. Unter „Werkzeuge > Ports“ werden die möglichen Ports angezeigt. Jetzt kann das Programm in der Arduino IDE kompiliert und auf den ESP32 geladen werden. Dafür muss das Pfeil-Symbol oben links betätigt werden.
 Wenn das Hochladen abgeschlossen ist, lässt sich über _Werkzeuge > Serieller Monitor_ ein weiteres Fenster öffnen, in dem alle 2 Sekunden der Text „Hello World“ ausgegeben wird. Die Kommunikation zwischen dem ESP32 und dem PC funktioniert also.
 Dieses neu-geöffnete Fenster ist der Serielle Monitor. Über die Code-Zeile `Serial.begin(9600)` wird eine Verbindung dazu aufgebaut und mit `Serial.println("Hello World")` können dann Text-Zeilen ausgegeben werden. Das kann später, z.B. für Kontroll-Ausgaben, verwendet werden. Falls die Ausgaben nicht menschenlesbar sind, sollte sichergestellt werden, dass die **Baudraten** von Code und seriellem Monitor übereinstimmen.
 
@@ -55,9 +55,9 @@ Um dieses richtig verwenden zu können, ist es wichtig, zu wissen, wie dieses ve
 <img src="img/breadboard0.png" alt="Grundanordnung Breadboard">
 
 #### LEDs
-In dieser Aufgabe soll die **LED** oder Leuchtdiode (_Light emitting diod_) eingeführt werden. 
+In dieser Aufgabe soll die **LED** (_Light emitting diod_) oder Leuchtdiode eingeführt werden. 
 Wenn durch eine LED Strom fließt, leuchtet sie. Ist der Strom durch die LED zu groß, brennt sie durch. Um das zu verhindern muss immer ein sogenannter Vorwiderstand zwischen der Stromquelle und der LED („vor der LED“) eingebaut werden. Für die folgenden Aufgaben soll immer ein Widerstand von 220 &#8486; verwendet werden.
-Wenn due die LED genau ansiehst, fällt dir auf, dass sie nicht symmetrisch aufgebaut ist, sondern einer der Anschlussdrähte länger ist. Der lange Anschlussdraht ist der Plus-Pol der LED, der kurze der Minus-Pol. An dieser Seite ist auch das Gehäuse der LED abgeflacht, auch daran lassen sich die Seiten unterscheiden.
+Wenn du dir die LED genau ansiehst, fällt dir auf, dass sie nicht symmetrisch aufgebaut ist, sondern einer der Anschlussdrähte länger ist. Der lange Anschlussdraht ist der Plus-Pol der LED, der kurze der Minus-Pol. An dieser Seite ist auch das Gehäuse der LED abgeflacht, auch daran lassen sich die Seiten unterscheiden.
 Der Strom soll mit dem langen Bein, also dem Plus-Pol verbunden sein.
 Baue nun die Schaltung entsprechend des folgenden Bildes auf:
 
@@ -67,7 +67,7 @@ Leuchtet die LED? - Was passiert, wenn man sie umdreht?
 
 ### Aufgabe 3
 Mit dem Aufbau der vorherigen Aufgabe liegt immer Spannung an der LED an und sie leuchtet immer.
-Wir wollen sie aber selbst über den Mikrocontroller ein- und ausschalten können. Dafür nutzen wir einen Ausgangspin des ESP32, den wir programmieren können. Bauen dafür als erstes diese Schaltung auf und öffne ein neues Projekt in der Arduino IDE:
+Wir wollen sie aber selbst über den Mikrocontroller ein- und ausschalten können. Dafür nutzen wir einen Ausgangspin des ESP32, den wir programmieren können. Baue dafür als erstes diese Schaltung auf und öffne ein neues Projekt in der Arduino IDE:
 
 <img src="img/breadboard2.png" alt="LED angeschlossen an Ausgang des Mikrocontrollers">
 
