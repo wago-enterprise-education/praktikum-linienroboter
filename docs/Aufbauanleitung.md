@@ -8,8 +8,9 @@ lang-ref: index
 Diese Anleitung soll dich durch den gesamten Aufbauprozess des Roboters führen. Damit dieser möglichst geordnet abläuft solltest du auch hier zunächst prüfen, ob [du alle Bauteile hast](Material.pdf).
 ### Löten
 
-| :exclamation:  Bevor du mit dem Löten startest wende dich an einen [Betreuer](./index.html/#ansprechpartner), damit wir dir eine kurze Einführung und Sicherheitseinweisung zum Löten erteilen können.   |
-|----------------------------------------------|
+>:exclamation:  
+>Bevor du mit dem Löten startest, wende dich an einen [Betreuer](./index.html/#ansprechpartner), damit wir dir eine kurze Einführung und Sicherheitseinweisung zum Löten erteilen können.
+
 
 
 |Vorderseite|Rückseite|
