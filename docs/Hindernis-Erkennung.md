@@ -23,7 +23,7 @@ Der Pin `ABSTAND_TRIGGER` gibt einen Ultrschallton aus, ist also ein _OUTPUT_. D
 
 Füge anschließend den Hindernis-Sensor zum Programm hinzu. Der Roboter soll in keinem Fahrmodus (Licht oder Linie Folgen) mit einem Hindernis kollidieren.
 
-So sieht das Signal des Ultraschallsensors aus.
+So sieht das Signal des Ultraschallsensors aus:
 
 <img src="img/ultraschallsensor.png" alt="Funktion des Ultraschallsensors">
 
