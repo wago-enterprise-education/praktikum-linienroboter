@@ -170,10 +170,10 @@ Genauso, wie du in der vorherigen Aufgabe die LED über einen analogen Wert ange
 
 <img src="img/breadboard5.png" alt="ESP mit Beeper">
 
-Um den Ton des Beeper verändern zu können, muss man sich der Funktion `ledcWrite(<Pin>,<Wert>)` bedienen.
-Mit diesem ist es möglich im Gegensatz zu `analogWrite()` nicht die Abstände zwischen zwei Stromimpulsen, sondern die Frequenz des Signals zu ändern, wodurch sich der Ton ändert.
+Um den Ton des Beepers verändern zu können, muss man sich der Funktion `ledcWrite(<Pin>,<Wert>)` bedienen.
+Mit dieser ist es möglich im Gegensatz zu `analogWrite()` nicht die Abstände zwischen zwei Stromimpulsen, sondern die Frequenz des Signals zu ändern, wodurch sich der Ton ändert.
 Um `ledcWrite()` verwenden zu können, müssen wir den Pin zusätzlich zum `pinMode()` mit `ledcAttach(<Pin>,<Frequenz>,8)` im Setup initialisieren.
-Der Ton verändert sich mit der eingestellten Frequenz. Probiere verschiedene Frequenzen aus – welcher Ton ist am angenehmsten? Merke dir den zugehörigen Wert; den Beeper brauchen wir später als Hupe für den Roboter!
+Der Ton verändert sich mit der eingestellten Frequenz. Probiere verschiedene Frequenzen aus – welcher Ton ist am angenehmsten? Merke dir den zugehörigen Wert, den Beeper brauchen wir später als Hupe für den Roboter!
 
 
 |                  |                 |
