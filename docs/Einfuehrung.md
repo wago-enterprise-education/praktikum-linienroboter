@@ -7,8 +7,8 @@ lang-ref: index
 
 ## Einführung
 
-In der Einführung sollst du dich zunächst mit der Arduino IDE und dem ESP 32 vertraut machen sowie elektro- sowie informationstechnische Grundlagen erlernen, um später den Linienroboter problemlos aufbauen zu können.
-Zuerst solltest mithilfe der [Materialliste](Material.pdf) sichergehen, alle nötigen Bauteile zusammensuchen. Die Bauteile für diese Einleitung sind nicht in dem Bauteilsatz für den Linienroboter enthalten. Bei der Durchführung der Einführung können dir [dieses Diagramm von den Pins des ESP32](00-Pinout-ESP32-DEVKIT-V1.pdf) und [dieser Arduino Cheat Sheet](00-CheatSheet-Arduino.pdf) helfen.
+In der Einführung sollst du dich zunächst mit der Arduino IDE und dem ESP 32 vertraut machen sowie elektro- und informationstechnische Grundlagen erlernen, um später den Linienroboter problemlos aufbauen zu können.
+Zuerst solltest du mithilfe der [Materialliste](Material.pdf) alle nötigen Bauteile zusammensuchen. Die Bauteile für diese Einleitung sind nicht in dem Bauteilsatz für den Linienroboter enthalten. Bei der Durchführung der Einführung können dir [dieses Diagramm von den Pins des ESP32](00-Pinout-ESP32-DEVKIT-V1.pdf) und [dieser Arduino Cheat Sheet](00-CheatSheet-Arduino.pdf) helfen.
 
 {: .info}
 Diese und die kommenden Anleitungen sollen dich bei deinem Praktikum unterstützen. Falls es zwischendurch Fragen geben sollte oder du anhand der Anleitung nicht weiterkommst, kannst du uns jederzeit [ansprechen](./index.md/#ansprechpartner)!
@@ -43,7 +43,7 @@ void loop() {
 }
 ```
 #### Verbindung zum ESP32 herstellen
-Verbinde den ESP32 mit einem microUSB-Kabel mit einem PC. Das passende ESP32-Board (ESP32 DOIT DEVKIT V1) ist in dieser Version der Arduino IDE schon vor-ausgewählt. Stelle als nächstes den Verbindungsport ein. Unter „Werkzeuge > Ports“ werden die möglichen Ports angezeigt. Jetzt kann das Programm in der Arduino IDE das Programm kompiliert und auf den ESP32 geladen werden. Dafür muss das Pfeil-Symbol oben links betätigt werden.
+Verbinde den ESP32 mit einem microUSB-Kabel mit einem PC. Das passende ESP32-Board (ESP32 DOIT DEVKIT V1) ist in dieser Version der Arduino IDE schon vor-ausgewählt. Stelle als nächstes den Verbindungsport ein. Unter „Werkzeuge > Ports“ werden die möglichen Ports angezeigt. Jetzt kann das Programm in der Arduino IDE kompiliert und auf den ESP32 geladen werden. Dafür muss das Pfeil-Symbol oben links betätigt werden.
 Wenn das Hochladen abgeschlossen ist, lässt sich über _Werkzeuge > Serieller Monitor_ ein weiteres Fenster öffnen, in dem alle 2 Sekunden der Text „Hello World“ ausgegeben wird. Die Kommunikation zwischen dem ESP32 und dem PC funktioniert also.
 Dieses neu-geöffnete Fenster ist der Serielle Monitor. Über die Code-Zeile `Serial.begin(9600)` wird eine Verbindung dazu aufgebaut und mit `Serial.println("Hello World")` können dann Text-Zeilen ausgegeben werden. Das kann später, z.B. für Kontroll-Ausgaben, verwendet werden. Falls die Ausgaben nicht menschenlesbar sind, sollte sichergestellt werden, dass die **Baudraten** von Code und seriellem Monitor übereinstimmen.
 
@@ -55,9 +55,9 @@ Um dieses richtig verwenden zu können, ist es wichtig, zu wissen, wie dieses ve
 <img src="img/breadboard0.png" alt="Grundanordnung Breadboard">
 
 #### LEDs
-In dieser Aufgabe soll die **LED** oder Leuchtdiode (_Light emitting diod_) eingeführt werden. 
-Wenn durch eine LED Strom fließt, leuchtet sie. Ist der Strom durch die LED zu groß, brennt sie durch. Um das zu verhindern muss immer ein sogenannter Vorwiderstand zwischen der Stromquelle und der LED („vor der LED“) eingebaut werden. Für die folgenden Aufgaben soll immer ein Widerstand von 220 $\Omega$ verwendet werden.
-Wenn due die LED genau ansiehst, fällt dir auf, dass sie nicht symmetrisch aufgebaut ist, sondern einer der Anschlussdrähte länger ist. Der lange Anschlussdraht ist der Plus-Pol der LED, der kurze der Minus-Pol. An dieser Seite ist auch das Gehäuse der LED abgeflacht, auch daran lassen sich die Seiten unterscheiden.
+In dieser Aufgabe soll die **LED** (_Light emitting diod_) oder Leuchtdiode eingeführt werden. 
+Wenn durch eine LED Strom fließt, leuchtet sie. Ist der Strom durch die LED zu groß, brennt sie durch. Um das zu verhindern muss immer ein sogenannter Vorwiderstand zwischen der Stromquelle und der LED („vor der LED“) eingebaut werden. Für die folgenden Aufgaben soll immer ein Widerstand von 220 &#8486; verwendet werden.
+Wenn du dir die LED genau ansiehst, fällt dir auf, dass sie nicht symmetrisch aufgebaut ist, sondern einer der Anschlussdrähte länger ist. Der lange Anschlussdraht ist der Plus-Pol der LED, der kurze der Minus-Pol. An dieser Seite ist auch das Gehäuse der LED abgeflacht, auch daran lassen sich die Seiten unterscheiden.
 Der Strom soll mit dem langen Bein, also dem Plus-Pol verbunden sein.
 Baue nun die Schaltung entsprechend des folgenden Bildes auf:
 
@@ -67,7 +67,7 @@ Leuchtet die LED? - Was passiert, wenn man sie umdreht?
 
 ### Aufgabe 3
 Mit dem Aufbau der vorherigen Aufgabe liegt immer Spannung an der LED an und sie leuchtet immer.
-Wir wollen sie aber selbst über den Mikrocontroller ein- und ausschalten können. Dafür nutzen wir einen Ausgangspin des ESP32, den wir programmieren können. Bauen dafür als erstes diese Schaltung auf und öffne ein neues Projekt in der Arduino IDE:
+Wir wollen sie aber selbst über den Mikrocontroller ein- und ausschalten können. Dafür nutzen wir einen Ausgangspin des ESP32, den wir programmieren können. Baue dafür als erstes diese Schaltung auf und öffne ein neues Projekt in der Arduino IDE:
 
 <img src="img/breadboard2.png" alt="LED angeschlossen an Ausgang des Mikrocontrollers">
 
@@ -81,11 +81,11 @@ Für alle Stellen im Programm, in denen die Pin Nummer benötigt wird, können w
 ```C
 pinMode(LED, OUTPUT);
 ```
-Damit „weiß“ das Programm, dass dieser Pin, an den die LED über den Vorwiderstand angeschlossen ist, einen Wert High/Low ausgeben soll. Das müssen wir im nächsten Schritt auf diesen Pin schreiben. Das soll immer wieder passieren, muss also in die loop()-Funktion geschrieben werden.
+Damit „weiß“ das Programm, dass dieser Pin, an den die LED über den Vorwiderstand angeschlossen ist, einen Wert High/Low ausgeben soll. Im nächsten Schritt müssen wir das auf diesen Pin schreiben. Das soll immer wieder passieren, muss also in die loop()-Funktion geschrieben werden.
 Ein digitaler Wert hat immer zwei Zustände: 0 und 1 bzw. true/false, HIGH/LOW.
 Um einen Ausgang ein- oder auszuschalten, muss die Funktion `digitalWrite(LED, HIGH);` aufgerufen werden.
 Mit HIGH wird die LED eingeschaltet. Um sie wieder auszuschalten, schreibt man LOW statt HIGH. Eine blinkende LED schaltet sich in festgelegten Abständen immer wieder an und aus. Um diesen Abstand zu programmieren, nutzt man `delay(<Zeit in Millisekunden>);`
-Schreibe nun ein Programm, welches anhand der nun bekannte Funktionen die LED alle 2 Sekunden für 2 Sekunden blinken lässt.
+Schreibe nun ein Programm, welches anhand der nun bekannte Funktionen die LED alle 2 Sekunden blinken lässt.
 
 ### Aufgabe 4
 Bisher haben wir einen Pin als Ausgang definiert und benutzt. Ebenso wichtig ist es, Eingänge lesen zu können.
@@ -132,14 +132,14 @@ if (Bedingung){
     Anweisung 3;
 }
 ```
-Versuche nun, die LED dann anzuschalten, wenn der Taster gedrückt ist.
+Versuche nun die LED dann anzuschalten, wenn der Taster gedrückt ist.
 
 ### Aufgabe 5
 #### Funktionsweise eines Potentiometer
 Für die Programmierung des Roboters brauchen wir später nicht nur digitale Ein- und Ausgänge, sondern auch analoge.
-Die können nicht nur HIGH oder LOW sein, sondern mehrere verschiedene (Zahlen-)Werte annehmen.
+Diese können nicht nur HIGH oder LOW sein, sondern mehrere verschiedene (Zahlen-)Werte annehmen.
 Um zunächst verschiedene Werte an einem Eingang zu lesen, nutzen wir ein Potentiometer. Das ist ein mechanisch einstellbarer Widerstand.
-Der Widerstandswert zwischen den beiden äußeren Anschlüssen ist fest. Am mittleren, dritten Anschluss ist der bewegliche Kontakt, dessen Widerstand man durch Drehen verstellen kann. Wenn man an die äußeren Anschlüsse eine Spannung anlegt, erhält man einen einstellbaren Spannungsteiler. Was das bedeutet, können wir mit einem Multimeter anschauen. Baue dafür die abgebildete Schaltung auf. Miss dann mit einem Multimeter zuerst die Spannung zwischen den äußeren Anschlüssen des Potentiometers und dann die zwischen dem mittleren Anschluss und dem Ground-Anschluss. 
+Der Widerstandswert, zwischen den beiden äußeren Anschlüssen, ist fest. Am mittleren, dritten Anschluss ist der bewegliche Kontakt, dessen Widerstand man durch Drehen verstellen kann. Wenn man an die äußeren Anschlüsse eine Spannung anlegt, erhält man einen einstellbaren Spannungsteiler. Was das bedeutet, können wir mit einem Multimeter anschauen. Baue dafür die abgebildete Schaltung auf. Miss dann mit einem Multimeter zuerst die Spannung zwischen den äußeren Anschlüssen des Potentiometers und dann die zwischen dem mittleren Anschluss und dem Ground-Anschluss. 
 Was passiert, wenn man am Potentiometer dreht? 
 
 #### Einlesen analoger Eingänge
@@ -157,23 +157,23 @@ Jetzt wollen wir durch das Drehen des Potentiometers eine LED dimmen. Dafür nut
 analogWrite(<Pin>, <Wert>);
 ```
 Mit `analogWrite()` kann man 256 verschiedene Helligkeiten einer LED einstellen, angefangen mit 0 für aus und 255 für volle Stärke.
-Unpraktischerweise kann man 4096 verschiedene Werte einlesen aber nur 256 Werte ausgeben. Um diese miteinander zu verbinden, verwendet man den Befehl `map()`.
+Unpraktischerweise kann man 4096 verschiedene Werte einlesen, aber nur 256 Werte ausgeben. Um diese miteinander zu verbinden, verwendet man den Befehl `map()`.
 Der Befehl wird so verwendet:
 
 ```C
 map(analogRead(<Pin>),0,4096,0,255);
 ```
-Versuche, den Befehl selbst nachzuvollziehen oder nimm das [Cheatsheet](00-CheatSheet-Arduino.pdf) zur Hilfe.
+Versuche, den Befehl selbst nachzuvollziehen oder nimm das [Cheat Sheet](00-CheatSheet-Arduino.pdf) zur Hilfe.
 
 ### Aufgabe 6
 Genauso, wie du in der vorherigen Aufgabe die LED über einen analogen Wert angesteuert hast, kann man zum Beispiel auch einen „Beeper“, das ist ein kleiner Lautsprecher, ansteuern.
 
 <img src="img/breadboard5.png" alt="ESP mit Beeper">
 
-Um den Ton des Beeper verändern zu können, muss man sich der Funktion `ledcWrite(<Pin>,<Wert>)` bedienen.
-Mit diesem ist es möglich im Gegensatz zu `analogWrite()` nicht die Abstände zwischen zwei Stromimpulsen, sondern die Frequenz des Signals zu ändern, wodurch sich der Ton ändert.
+Um den Ton des Beepers verändern zu können, muss man sich der Funktion `ledcWrite(<Pin>,<Wert>)` bedienen.
+Mit dieser ist es möglich im Gegensatz zu `analogWrite()` nicht die Abstände zwischen zwei Stromimpulsen, sondern die Frequenz des Signals zu ändern, wodurch sich der Ton ändert.
 Um `ledcWrite()` verwenden zu können, müssen wir den Pin zusätzlich zum `pinMode()` mit `ledcAttach(<Pin>,<Frequenz>,8)` im Setup initialisieren.
-Der Ton verändert sich mit der eingestellten Frequenz. Probiere verschiedene Frequenzen aus – welcher Ton ist am angenehmsten? Merke dir den zugehörigen Wert; den Beeper brauchen wir später als Hupe für den Roboter!
+Der Ton verändert sich mit der eingestellten Frequenz. Probiere verschiedene Frequenzen aus – welcher Ton ist am angenehmsten? Merke dir den zugehörigen Wert, den Beeper brauchen wir später als Hupe für den Roboter!
 
 
 |                  |                 |

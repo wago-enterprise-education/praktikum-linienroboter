@@ -1,218 +1,229 @@
+#include <stdint.h>
 #include "HardwareSerial.h"
 #include <WiFi.h>
 #include <ESPAsyncWebServer.h>
 #include <ESPUI.h>
 
-class Webserver{
-  private: 
-    IPAddress IP;
+class Webserver {
+private:
+  IPAddress IP;
 
-    bool ioSwitch;
+  bool ioSwitch;
 
-    // Modes
-    bool followLine;
-    bool followLight;
-    bool obstacleSensor;
-    bool blackLine = true;
 
-    // PAD
-    bool padLeft;
-    bool padRight;
-    bool padFor;
-    bool padBack;
+  // Modes
+  bool followLine;
+  bool followLight;
+  bool obstacleSensor;
+  bool blackLine = true;
 
-    bool hornButton;
+  // PAD
+  bool padLeft;
+  bool padRight;
+  bool padFor;
+  bool padBack;
 
-    // ESP Components
-    uint16_t lineSwitch, lightSwitch, ultrasonic, ioSwitcher;
-  public: 
-    // Constructor
-    Webserver() {
-    }
+  bool hornButton;
 
-    /**
+  // ESP Components
+  uint16_t lineSwitch, lightSwitch, ultrasonic, ioSwitcher;
+  uint16_t hornTapper, controlPad;
+
+
+public:
+  // Constructor
+  Webserver() {
+  }
+
+  /**
      * Start ESP Webserver
      * 
      * @param ssid: Network Name
      * @param password: Network Password
      */
-    void start(char* ssid = "Webserver", char* password = "") {
-      // Setting up Network
-      WiFi.softAP(ssid, password);
-      IP = WiFi.softAPIP();
-      Serial.print(IP);
+  void start(char *ssid = "Webserver", char *password = "") {
+    // Setting up Network
+    WiFi.softAP(ssid, password);
+    IP = WiFi.softAPIP();
+    Serial.print(IP);
 
-      // Start ESPUI
-      ESPUI.begin("ESP32 Control");
+    // Start ESPUI
+    ESPUI.begin("WAGO Linienroboter");
 
-      // IO Switch Component
-      ioSwitcher = ESPUI.switcher("I/0", [this] (Control *sender, int type) mutable {
-        if(type == S_ACTIVE) {
+    // IO Switch Component
+    ioSwitcher = ESPUI.switcher(
+      "Aus/An", [this](Control *sender, int type) mutable {
+        if (type == S_ACTIVE) {
           ioSwitch = true;
+          ESPUI.setElementStyle(ioSwitcher, "background: #6EC800; border-bottom: #555");
         } else {
           ioSwitch = false;
+          ESPUI.setElementStyle(ioSwitcher, "background: #1F2837; border-bottom: #555");
         }
-      }, ControlColor::Dark, false);
+      },
+      ControlColor::None, false);
+    ESPUI.setPanelStyle(ioSwitcher, "background: #1F2837; border-bottom: #555");
+    // Tabs
+    uint16_t tab1 = ESPUI.addControl(ControlType::Tab, "", "Funktionssteuerung");
+    uint16_t tab2 = ESPUI.addControl(ControlType::Tab, "", "Manuelle Steuerung");
 
-      // Tabs
-      uint16_t tab1 = ESPUI.addControl(ControlType::Tab, "", "Funktionssteuerung");
-      uint16_t tab2 = ESPUI.addControl(ControlType::Tab, "", "Manuelle Steuerung");
+    // Line Switch Component
+    lineSwitch = ESPUI.addControl(ControlType::Switcher, "Linie folgen", "", ControlColor::None, tab1, [this](Control *sender, int type) mutable {
+      if (type == S_ACTIVE) {
+        followLine = true;
+        followLight = false;
+        ESPUI.getControl(lightSwitch)->value = "0";
+        ESPUI.setElementStyle(lineSwitch, "background: #6EC800; border-bottom: #555");
+      } else {
+        followLine = false;
+        ESPUI.setElementStyle(lineSwitch, "background: #1F2837; border-bottom: #555");
+      }
+      ESPUI.updateControl(lightSwitch);
+      ESPUI.updateControl(lineSwitch);
+    });
+    ESPUI.setPanelStyle(lineSwitch, "background: #6EC800; border-bottom: #555");
+    
 
-      // Line Switch Component
-      lineSwitch = ESPUI.addControl(ControlType::Switcher, "Linie folgen", "", ControlColor::Alizarin, tab1, [this] (Control *sender, int type) mutable {
-        if(type == S_ACTIVE) {
-          followLine = true;
-          followLight = false;
-          ESPUI.getControl(lightSwitch) -> value = "0";
-          ESPUI.getControl(lightSwitch) -> color = ControlColor::Alizarin;
-          ESPUI.getControl(lineSwitch) -> color = ControlColor::Emerald;
-        } else {
-          followLine = false;
-          ESPUI.getControl(lineSwitch) -> color = ControlColor::Alizarin;
+    // Light Switch Component
+    lightSwitch = ESPUI.addControl(ControlType::Switcher, "Licht folgen", "", ControlColor::None, tab1, [this](Control *sender, int type) mutable {
+      if (type == S_ACTIVE) {
+        followLight = true;
+        followLine = false;
+        ESPUI.getControl(lineSwitch)->value = "0";
+        ESPUI.setElementStyle(lightSwitch, "background: #6EC800; border-bottom: #555");
+      } else {
+        followLight = false;
+        ESPUI.setElementStyle(lightSwitch, "background: #1F2837; border-bottom: #555");
+      }
+      ESPUI.updateControl(lightSwitch);
+      ESPUI.updateControl(lineSwitch);
+    });
+    ESPUI.setPanelStyle(lightSwitch, "background: #6EC800; border-bottom: #555");
+    // Ultrasonic Component
+    ultrasonic = ESPUI.addControl(ControlType::Switcher, "Ueberholmodus", "", ControlColor::None, tab1, [this](Control *sender, int type) mutable {
+      if (type == S_ACTIVE) {
+        obstacleSensor = true;
+        ESPUI.setElementStyle(ultrasonic, "background: #6EC800; border-bottom: #555");
+      } else {
+        obstacleSensor = false;
+        ESPUI.setElementStyle(ultrasonic, "background: #1F2837; border-bottom: #555");
+      }
+      ESPUI.updateControl(ultrasonic);
+    });
+    ESPUI.setPanelStyle(ultrasonic, "background: #6EC800; border-bottom: #555");
+    // Line Color Component
+    uint16_t select1 = ESPUI.addControl(ControlType::Select, "Linie folgen:", "", ControlColor::None, tab1, [this](Control *sender, int type) mutable {
+      if (sender->value == "lineHIGH") {
+        blackLine = true;
+      } else {
+        blackLine = false;
+      }
+    });
+    ESPUI.setPanelStyle(select1, "background: #000000; border-bottom: #555");
+    ESPUI.addControl(ControlType::Option, "Schwarze Linie auf Weiß", "lineHIGH", ControlColor::None, select1);
+    ESPUI.addControl(ControlType::Option, "Weiße Linie auf Schwarz", "lineLOW", ControlColor::None, select1);
+
+    // Pad Component
+    controlPad = ESPUI.addControl(ControlType::Pad, "Bewegung", "", ControlColor::None, tab2, [this](Control *sender, int type) mutable {
+      switch (type) {
+        case P_LEFT_DOWN:
+          padLeft = true;
+          break;
+        case P_LEFT_UP:
+          padLeft = false;
+          break;
+        case P_RIGHT_DOWN:
+          padRight = true;
+          break;
+        case P_RIGHT_UP:
+          padRight = false;
+          break;
+        case P_FOR_DOWN:
+          padFor = true;
+          break;
+        case P_FOR_UP:
+          padFor = false;
+          break;
+        case P_BACK_DOWN:
+          padBack = true;
+          break;
+        case P_BACK_UP:
+          padBack = false;
+          break;
+      }
+      ESPUI.setPanelStyle(controlPad, "background: #6EC800; border-bottom: #555");
+
+      if (padLeft || padRight || padFor || padBack) {
+        if (lineSwitch == true) {
+          lineSwitch = false;
+          ESPUI.getControl(lineSwitch)->value = "0";
+          ESPUI.updateControl(lineSwitch);
         }
-        ESPUI.updateControl(lightSwitch);
-        ESPUI.updateControl(lineSwitch);
-      });
 
-      // Light Switch Component
-      lightSwitch = ESPUI.addControl(ControlType::Switcher, "Licht folgen", "", ControlColor::Alizarin, tab1, [this] (Control *sender, int type) mutable {
-        if(type == S_ACTIVE) {
-          followLight = true;
-          followLine = false;
-          ESPUI.getControl(lineSwitch) -> value = "0";
-          ESPUI.getControl(lineSwitch) -> color = ControlColor::Alizarin;
-          ESPUI.getControl(lightSwitch) -> color = ControlColor::Emerald;
-        } else {
-          followLight = false;
-          ESPUI.getControl(lightSwitch) -> color = ControlColor::Alizarin;
+        if (lightSwitch == true) {
+          lightSwitch = false;
+          ESPUI.getControl(lightSwitch)->value = "0";
+          ESPUI.updateControl(lightSwitch);
         }
-        ESPUI.updateControl(lightSwitch);
-        ESPUI.updateControl(lineSwitch);
-      });
+      }
+    });
 
-      // Ultrasonic Component
-      ultrasonic = ESPUI.addControl(ControlType::Switcher, "Hindernissensor", "", ControlColor::Alizarin, tab1, [this] (Control *sender, int type) mutable {
-        if(type == S_ACTIVE) {
-          obstacleSensor = true;
-          ESPUI.getControl(ultrasonic) -> color = ControlColor::Emerald;
-        } else {
-          obstacleSensor = false;
-          ESPUI.getControl(ultrasonic) -> color = ControlColor::Alizarin;
-        }
-        ESPUI.updateControl(ultrasonic);
-      });
+    // Horn Component
+    hornTapper = ESPUI.addControl(ControlType::Button, "Hupe", "Hup! Hup!", ControlColor::None, tab2, [this](Control *sender, int type) mutable {
+      if (type == B_DOWN) {
+        hornButton = true;
+      } else if (type == B_UP) {
+        hornButton = false;
+      }
+    });
+    ESPUI.setPanelStyle(hornTapper, "background: #6EC800; border-bottom: #555");
+    ESPUI.setElementStyle(hornTapper, "background: #1F2837; border-bottom: #555");
+  }
 
-      // Line Color Component
-      uint16_t select1 = ESPUI.addControl(ControlType::Select, "Linie folgen:", "", ControlColor::Turquoise, tab1, [this] (Control *sender, int type) mutable {
-        if(sender -> value == "lineHIGH") {
-          blackLine = true;
-        } else {
-          blackLine = false;
-        }
-      });
 
-      ESPUI.addControl(ControlType::Option, "Schwarze Linie auf Weiß", "lineHIGH", ControlColor::Turquoise, select1);
-      ESPUI.addControl(ControlType::Option, "Weiße Linie auf Schwarz", "lineLOW", ControlColor::Turquoise, select1);
 
-      // Pad Component
-      ESPUI.addControl(ControlType::Pad, "Bewegung", "", ControlColor::Dark, tab2, [this] (Control *sender, int type) mutable {
-        switch (type) {
-          case P_LEFT_DOWN:
-            padLeft = true;
-            break;
-          case P_LEFT_UP:
-            padLeft = false;
-            break;
-          case P_RIGHT_DOWN:
-            padRight = true;
-            break;
-          case P_RIGHT_UP:
-            padRight = false;
-            break;
-          case P_FOR_DOWN:
-            padFor = true;
-            break;
-          case P_FOR_UP:
-            padFor = false;
-            break;
-          case P_BACK_DOWN:
-            padBack = true;
-            break;
-          case P_BACK_UP:
-            padBack = false;
-            break;
-        }
+  // Getter Methodes
+  bool getPadLeft() {
+    return padLeft;
+  }
 
-        if(padLeft || padRight || padFor || padBack){
-          if(lineSwitch == true) {
-            lineSwitch = false;
-            ESPUI.getControl(lineSwitch) -> value = "0";
-            ESPUI.getControl(lineSwitch) -> color = ControlColor::Alizarin;
-            ESPUI.updateControl(lineSwitch);
-          }
-          
-          if(lightSwitch == true){
-            lightSwitch = false;
-            ESPUI.getControl(lightSwitch) -> value = "0";
-            ESPUI.getControl(lightSwitch) -> color = ControlColor::Alizarin;
-            ESPUI.updateControl(lightSwitch);
-          }
-        }
-      });
+  bool getPadRight() {
+    return padRight;
+  }
 
-      // Horn Component
-      ESPUI.addControl(ControlType::Button, "Hupe", "Hup! Hup!", ControlColor::Alizarin, tab2, [this] (Control *sender, int type) mutable {
-        if(type == B_DOWN) {
-          hornButton = true;
-        } else if(type == B_UP) {
-          hornButton = false;
-        }
-      });
-    }
+  bool getPadFor() {
+    return padFor;
+  }
 
-    // Getter Methodes
-    bool getPadLeft() {
-      return padLeft;
-    }
+  bool getPadBack() {
+    return padBack;
+  }
 
-    bool getPadRight() {
-      return padRight;
-    }
+  bool getIOSwitch() {
+    return ioSwitch;
+  }
 
-    bool getPadFor() {
-      return padFor;
-    }
+  bool getHornButton() {
+    return hornButton;
+  }
 
-    bool getPadBack() {
-      return padBack;
-    }
+  bool getLineButton() {
+    return followLine;
+  }
 
-    bool getIOSwitch() {
-      return ioSwitch;
-    }
+  bool getLightButton() {
+    return followLight;
+  }
 
-    bool getHornButton() {
-      return hornButton;
-    }
+  bool getObstacleButton() {
+    return obstacleSensor;
+  }
 
-    bool getLineButton() {
-      return followLine;
-    }
+  bool isBlackLine() {
+    return blackLine;
+  }
 
-    bool getLightButton() {
-      return followLight;
-    }
-
-    bool getObstacleButton() {
-      return obstacleSensor;
-    }
-
-    bool isBlackLine() {
-      return blackLine;
-    }
-
-    bool isWhiteLine() {
-      return !blackLine;
-    }
+  bool isWhiteLine() {
+    return !blackLine;
+  }
 };
-

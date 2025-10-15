@@ -10,13 +10,13 @@ Um den Linienroboter fernsteuern zu können, steht der Code für einen Webserver
 <img src="img/webserver.png" alt="Bildschirmfoto der Webanwendung">
 
 ### Vorbereitung
-Um den Webserver nutzen zu können, müssen die Arduino IDE einige Bibliotheken hinzugefügt werden:
+Um den Webserver nutzen zu können, müssen der Arduino IDE einige Bibliotheken hinzugefügt werden:
 + "ESP Async WebServer" von "ESP32Async"
 + "Async TCP" von "ESP32Async"
 + "ESPUI" von "Lukas Bachschwell"
 
 {:.info}
-Bibliotheken können über den Bibliotheksverwalter min der linken Seitenleiste installiert werden.
+Bibliotheken können über den Bibliotheksverwalter in der linken Seitenleiste installiert werden.
 
 Des Weiteren muss der [Code für den Webserver](Webserver.cpp) in das Quellverzeichnis des Arduinosketches gespeichert werden. In der `.ino`-Datei muss dieser dann aufgerufen werden:
 
@@ -55,7 +55,7 @@ Der Webserver ist unter der IP-Adresse des ESP32 `192.168.4.1` zu erreichen. Sol
 
 ### Codeanpassungen
 Jetzt muss nur noch der Code angepasst werden, um die Funktionen des Webservers zu nutzen.
-Die Funktionen, welche du bereits programmiert hast, sollen nur aktiv werden, wenn der jeweilige Button auf der Weboberfläche gedrückt ist. Hierfür müssen die Codeblöcke in ein _If_-Statement eingebettet werden.
+Die Funktionen, welche du bereits programmiert hast, sollen nur aktiv werden, wenn der jeweilige Button auf der Weboberfläche gedrückt ist. Hierfür müssen die Codeblöcke in ein _if_-Statement eingebettet werden.
 
 ```C
 if(server.getObstacleButton()){
