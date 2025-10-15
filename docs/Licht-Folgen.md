@@ -20,6 +20,6 @@ Der ausgelesene Wert lässt sich mithilfe eines zuvor gelernten Befehls in Motor
 
 
 |<a href="./Linie-folgen.html"><- Linie folgen</a>|<a href="./Hindernis-Erkennung.html">Hindernis erkennen -></a>|
-|:-------------    | -------------:  |
+|:------------- | -------------:|
 
 
