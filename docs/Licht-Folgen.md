@@ -18,8 +18,8 @@ Lass dir die Werte der Sensoren zunächst im Seriellen Monitor ausgeben und scha
 Der ausgelesene Wert lässt sich mithilfe eines zuvor gelernten Befehls in Motorstärke „umformen“. Da für den Befehl die übergebenen Werte nur innerhalb eines bestimmten Bereichs sein dürfen, verwenden wir den Befehl
 `constrain(x, minWert, maxWert);`
 
-|                  |                 |
-|:-------------    | -------------:  |
+
 |<a href="./Linie-folgen.html"><- Linie folgen</a>|<a href="./Hindernis-Erkennung.html">Hindernis erkennen -></a>|
+|:-------------    | -------------:  |
 
 
