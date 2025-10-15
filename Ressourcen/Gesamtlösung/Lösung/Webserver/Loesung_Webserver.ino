@@ -16,6 +16,8 @@
 // Constants
 int SPEED = 75; // Min: 0; Max: 255;
 int MIN_DISTANCE = 15;
+int light_right = 3100;
+int light_left = 3100;
 
 Webserver server;
 
@@ -174,15 +176,25 @@ void followLineSharp(){
  * Follow the light
  */
 void followLight(){
-  if(analogRead(LIGHT_LEFT) <= analogRead(LIGHT_RIGHT)){
+  if((analogRead(LIGHT_LEFT)<=light_right)&&(analogRead(LIGHT_RIGHT)<=light_left)){
+    analogWrite(MOTOR_LEFT, SPEED);
+    analogWrite(MOTOR_RIGHT, SPEED);
+    digitalWrite(TURN_SIGNAL_LEFT, LOW);
+    digitalWrite(TURN_SIGNAL_RIGHT, LOW);
+  } else if ((analogRead(LIGHT_LEFT)>light_right)&&(analogRead(LIGHT_RIGHT)<=light_left)){
+    analogWrite(MOTOR_LEFT, SPEED);
+    analogWrite(MOTOR_RIGHT, 0);
+    digitalWrite(TURN_SIGNAL_LEFT, LOW);
+    digitalWrite(TURN_SIGNAL_RIGHT, HIGH);
+  } else if ((analogRead(LIGHT_LEFT)<=light_right)&&(analogRead(LIGHT_RIGHT)>light_left)){
     analogWrite(MOTOR_LEFT, 0);
     analogWrite(MOTOR_RIGHT, SPEED);
     digitalWrite(TURN_SIGNAL_LEFT, HIGH);
     digitalWrite(TURN_SIGNAL_RIGHT, LOW);
-  }else{
-    analogWrite(MOTOR_LEFT, SPEED);
+  } else{
+    analogWrite(MOTOR_LEFT, 0);
     analogWrite(MOTOR_RIGHT, 0);
-    digitalWrite(TURN_SIGNAL_RIGHT, HIGH);
+    digitalWrite(TURN_SIGNAL_RIGHT, LOW);
     digitalWrite(TURN_SIGNAL_LEFT, LOW);
   }
 }
