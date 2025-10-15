@@ -132,14 +132,14 @@ if (Bedingung){
     Anweisung 3;
 }
 ```
-Versuche nun, die LED dann anzuschalten, wenn der Taster gedrückt ist.
+Versuche nun die LED dann anzuschalten, wenn der Taster gedrückt ist.
 
 ### Aufgabe 5
 #### Funktionsweise eines Potentiometer
 Für die Programmierung des Roboters brauchen wir später nicht nur digitale Ein- und Ausgänge, sondern auch analoge.
-Die können nicht nur HIGH oder LOW sein, sondern mehrere verschiedene (Zahlen-)Werte annehmen.
+Diese können nicht nur HIGH oder LOW sein, sondern mehrere verschiedene (Zahlen-)Werte annehmen.
 Um zunächst verschiedene Werte an einem Eingang zu lesen, nutzen wir ein Potentiometer. Das ist ein mechanisch einstellbarer Widerstand.
-Der Widerstandswert zwischen den beiden äußeren Anschlüssen ist fest. Am mittleren, dritten Anschluss ist der bewegliche Kontakt, dessen Widerstand man durch Drehen verstellen kann. Wenn man an die äußeren Anschlüsse eine Spannung anlegt, erhält man einen einstellbaren Spannungsteiler. Was das bedeutet, können wir mit einem Multimeter anschauen. Baue dafür die abgebildete Schaltung auf. Miss dann mit einem Multimeter zuerst die Spannung zwischen den äußeren Anschlüssen des Potentiometers und dann die zwischen dem mittleren Anschluss und dem Ground-Anschluss. 
+Der Widerstandswert, zwischen den beiden äußeren Anschlüssen, ist fest. Am mittleren, dritten Anschluss ist der bewegliche Kontakt, dessen Widerstand man durch Drehen verstellen kann. Wenn man an die äußeren Anschlüsse eine Spannung anlegt, erhält man einen einstellbaren Spannungsteiler. Was das bedeutet, können wir mit einem Multimeter anschauen. Baue dafür die abgebildete Schaltung auf. Miss dann mit einem Multimeter zuerst die Spannung zwischen den äußeren Anschlüssen des Potentiometers und dann die zwischen dem mittleren Anschluss und dem Ground-Anschluss. 
 Was passiert, wenn man am Potentiometer dreht? 
 
 #### Einlesen analoger Eingänge
