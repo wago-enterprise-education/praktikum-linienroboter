@@ -157,13 +157,13 @@ Jetzt wollen wir durch das Drehen des Potentiometers eine LED dimmen. Dafür nut
 analogWrite(<Pin>, <Wert>);
 ```
 Mit `analogWrite()` kann man 256 verschiedene Helligkeiten einer LED einstellen, angefangen mit 0 für aus und 255 für volle Stärke.
-Unpraktischerweise kann man 4096 verschiedene Werte einlesen aber nur 256 Werte ausgeben. Um diese miteinander zu verbinden, verwendet man den Befehl `map()`.
+Unpraktischerweise kann man 4096 verschiedene Werte einlesen, aber nur 256 Werte ausgeben. Um diese miteinander zu verbinden, verwendet man den Befehl `map()`.
 Der Befehl wird so verwendet:
 
 ```C
 map(analogRead(<Pin>),0,4096,0,255);
 ```
-Versuche, den Befehl selbst nachzuvollziehen oder nimm das [Cheatsheet](00-CheatSheet-Arduino.pdf) zur Hilfe.
+Versuche, den Befehl selbst nachzuvollziehen oder nimm das [Cheat Sheet](00-CheatSheet-Arduino.pdf) zur Hilfe.
 
 ### Aufgabe 6
 Genauso, wie du in der vorherigen Aufgabe die LED über einen analogen Wert angesteuert hast, kann man zum Beispiel auch einen „Beeper“, das ist ein kleiner Lautsprecher, ansteuern.
