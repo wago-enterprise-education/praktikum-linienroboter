@@ -23,9 +23,9 @@ Dies ist Platinen bedingt und kann nicht geändert werden. Die Pin-Nummer ist hi
 Theoretisch ließe sich das Programm auch nur durch Pin-Nummern umsetzen, allerdings ist es mit den alternativen-Bezeichnungen viel übersichtlicher.
 
 ### Aufgabe 1: "Linie Folgen"
-Kombiniere die verherigen Aufgaben so, dass dein Roboter einer Linie folgen kann.
+Kombiniere die vorherigen Aufgaben so, dass dein Roboter einer Linie folgen kann.
 
-Als Linie funktioniert ein dünnes, schwarzes Blebeband oder Isolierband, dass auf einem weißen Tisch im Kreis gezogen wurde.
+Als Linie funktioniert ein dünnes, schwarzes Klebeband oder Isolierband, dass auf einem weißen Tisch im Kreis gezogen wurde.
 
 ### Aufgabe 2: "Blinken"
 Nutze die LEDs auf der Platine als Blinker des Roboters. Es soll die linke LED blinken, wenn der Roboter eine Linkskurve fährt und umgekehrt.
@@ -38,6 +38,7 @@ Nutze den Beeper als Hupe des Roboters. Wenn beide Liniensensoren die Farbe der 
 |                  |                 |
 |:-------------    | -------------:  |
 |<a href="./Aufbauanleitung.html"><- Aufbauanleitung</a>|<a href="./Licht-Folgen.html">Licht folgen -></a>|
+
 
 
 
