@@ -81,11 +81,11 @@ Für alle Stellen im Programm, in denen die Pin Nummer benötigt wird, können w
 ```C
 pinMode(LED, OUTPUT);
 ```
-Damit „weiß“ das Programm, dass dieser Pin, an den die LED über den Vorwiderstand angeschlossen ist, einen Wert High/Low ausgeben soll. Das müssen wir im nächsten Schritt auf diesen Pin schreiben. Das soll immer wieder passieren, muss also in die loop()-Funktion geschrieben werden.
+Damit „weiß“ das Programm, dass dieser Pin, an den die LED über den Vorwiderstand angeschlossen ist, einen Wert High/Low ausgeben soll. Im nächsten Schritt müssen wir das auf diesen Pin schreiben. Das soll immer wieder passieren, muss also in die loop()-Funktion geschrieben werden.
 Ein digitaler Wert hat immer zwei Zustände: 0 und 1 bzw. true/false, HIGH/LOW.
 Um einen Ausgang ein- oder auszuschalten, muss die Funktion `digitalWrite(LED, HIGH);` aufgerufen werden.
 Mit HIGH wird die LED eingeschaltet. Um sie wieder auszuschalten, schreibt man LOW statt HIGH. Eine blinkende LED schaltet sich in festgelegten Abständen immer wieder an und aus. Um diesen Abstand zu programmieren, nutzt man `delay(<Zeit in Millisekunden>);`
-Schreibe nun ein Programm, welches anhand der nun bekannte Funktionen die LED alle 2 Sekunden für 2 Sekunden blinken lässt.
+Schreibe nun ein Programm, welches anhand der nun bekannte Funktionen die LED alle 2 Sekunden blinken lässt.
 
 ### Aufgabe 4
 Bisher haben wir einen Pin als Ausgang definiert und benutzt. Ebenso wichtig ist es, Eingänge lesen zu können.
